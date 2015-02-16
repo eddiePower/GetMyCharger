@@ -62,6 +62,7 @@
     [notification setAlertBody:@"You Quit GrabMyCharger monitoring service! We cant protect your charger till you restart the app."];
     [notification setFireDate:[NSDate dateWithTimeIntervalSinceNow:0]];
     [notification setTimeZone:[NSTimeZone defaultTimeZone]];
+    [notification setSoundName:UILocalNotificationDefaultSoundName];
    
     //Set the notification on the application.
     [application setScheduledLocalNotifications:[NSArray arrayWithObject:notification]];
