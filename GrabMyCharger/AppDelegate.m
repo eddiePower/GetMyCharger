@@ -115,8 +115,10 @@
         [notification setTimeZone:[NSTimeZone defaultTimeZone]];
         [notification setSoundName:UILocalNotificationDefaultSoundName];
         
+        NSLog(@"THE NOTIFICATION IS %@", notification.description);
+        
         //Set the notification on the application.
-        [application setScheduledLocalNotifications:[NSArray arrayWithObject:notification]];
+        [[UIApplication sharedApplication] setScheduledLocalNotifications:[NSArray arrayWithObject:notification]];
     }
     else if ([UIDevice currentDevice].batteryState == 3)
     {
@@ -130,8 +132,10 @@
         [notification setTimeZone:[NSTimeZone defaultTimeZone]];
         [notification setSoundName:UILocalNotificationDefaultSoundName];
         
+        NSLog(@"THE NOTIFICATION IS %@", notification.description);
+        
         //Set the notification on the application.
-        [application setScheduledLocalNotifications:[NSArray arrayWithObject:notification]];
+        [[UIApplication sharedApplication] setScheduledLocalNotifications:[NSArray arrayWithObject:notification]];
     }
     
 }
