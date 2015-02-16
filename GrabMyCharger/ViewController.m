@@ -128,6 +128,10 @@ int secondsLeft;
     {
         self.chargerStateLabel.text = @"Battery Full!!!";
     }
+    else if(self.myDevice.batteryState == 0)
+    {
+        self.chargerStateLabel.text = @"Prob simulator or a Error Charging.";
+    }
     else
     {
        self.chargerStateLabel.text = @"Unknown-!";

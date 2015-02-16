@@ -21,46 +21,6 @@
 {
     self.types = UIUserNotificationTypeBadge | UIUserNotificationTypeSound | UIUserNotificationTypeAlert;
     
-    //Set up a Accept Action for notification.
-    UIMutableUserNotificationAction *acceptAction = [[UIMutableUserNotificationAction alloc] init];
-    acceptAction.identifier = @"ACCEPT_IDENTIFIER";
-    acceptAction.title = @"Accept";
-    acceptAction.activationMode = UIUserNotificationActivationModeBackground;
-    acceptAction.destructive = NO;
-    acceptAction.authenticationRequired = NO;
-    
-    //Set up a Maybe Action for notification.
-    UIMutableUserNotificationAction *maybeAction = [[UIMutableUserNotificationAction alloc] init];
-    maybeAction.identifier = @"MAYBE_IDENTIFIER";
-    maybeAction.title = @"MayBe";
-    maybeAction.activationMode = UIUserNotificationActivationModeBackground;
-    maybeAction.destructive = NO;
-    maybeAction.authenticationRequired = NO;
-    
-    //Set up a decline Action for notification.
-    UIMutableUserNotificationAction *declineAction = [[UIMutableUserNotificationAction alloc] init];
-    declineAction.identifier = @"DECLINE_IDENTIFIER";
-    declineAction.title = @"Decline";
-    declineAction.activationMode = UIUserNotificationActivationModeBackground;
-    declineAction.destructive = NO;
-    declineAction.authenticationRequired = NO;
-    
-    //Action catagories for above actions.
-    UIMutableUserNotificationCategory *acceptCatagory = [[UIMutableUserNotificationCategory alloc] init];
-    acceptCatagory.identifier = @"ACCEPT_CATAGORY";
-    [acceptCatagory setActions:@[acceptAction, maybeAction, declineAction] forContext:UIUserNotificationActionContextDefault];
-    [acceptCatagory setActions:@[acceptCatagory, declineAction] forContext:UIUserNotificationActionContextMinimal];
-    
-    //Register Action Catagories
-    NSSet *catagories = [NSSet setWithObjects:acceptCatagory, nil];
-    
-    UIUserNotificationSettings *mySettings = [UIUserNotificationSettings settingsForTypes: self.types categories: catagories];
-    
-    [[UIApplication sharedApplication] registerUserNotificationSettings:mySettings];
-    
-    
-    
-    
     //Ask user permission to show notifications from our app, this allows for badge,sound & alertBar.
     if ([UIApplication instancesRespondToSelector:@selector(registerUserNotificationSettings:)])
     {
@@ -83,6 +43,50 @@
 {
     // Use this method to release shared resources, save user data, invalidate timers, and store enough application state information to restore your application to its current state in case it is terminated later.
     // If your application supports background execution, this method is called instead of applicationWillTerminate: when the user quits.
+    
+    [NSTimer scheduledTimerWithTimeInterval:1 target:self selector:@selector(checkBattery) userInfo:nil repeats:YES];
+    
+    self.types = UIUserNotificationTypeBadge | UIUserNotificationTypeSound | UIUserNotificationTypeAlert;
+    
+    //Set up a Accept Action for notification.
+    UIMutableUserNotificationAction *acceptAction = [[UIMutableUserNotificationAction alloc] init];
+    acceptAction.identifier = @"ACCEPT_IDENTIFIER";
+    acceptAction.title = @"Accept";
+    acceptAction.activationMode = UIUserNotificationActivationModeBackground;
+    acceptAction.destructive = NO;
+    acceptAction.authenticationRequired = NO;
+    
+    /*
+    //Set up a Maybe Action for notification.
+    UIMutableUserNotificationAction *maybeAction = [[UIMutableUserNotificationAction alloc] init];
+    maybeAction.identifier = @"MAYBE_IDENTIFIER";
+    maybeAction.title = @"MayBe";
+    maybeAction.activationMode = UIUserNotificationActivationModeBackground;
+    maybeAction.destructive = NO;
+    maybeAction.authenticationRequired = NO;
+    */
+    //Set up a decline Action for notification.
+    UIMutableUserNotificationAction *declineAction = [[UIMutableUserNotificationAction alloc] init];
+    declineAction.identifier = @"DECLINE_IDENTIFIER";
+    declineAction.title = @"Decline";
+    declineAction.activationMode = UIUserNotificationActivationModeBackground;
+    declineAction.destructive = NO;
+    declineAction.authenticationRequired = NO;
+    
+    //Action catagories for above actions.
+    UIMutableUserNotificationCategory *acceptCatagory = [[UIMutableUserNotificationCategory alloc] init];
+    acceptCatagory.identifier = @"ACCEPT_CATAGORY";
+    [acceptCatagory setActions:@[acceptAction, declineAction] forContext:UIUserNotificationActionContextDefault];
+    [acceptCatagory setActions:@[acceptCatagory, declineAction] forContext:UIUserNotificationActionContextMinimal];
+    
+    //Register Action Catagories
+    NSSet *catagories = [NSSet setWithObjects:acceptCatagory, nil];
+    
+    UIUserNotificationSettings *mySettings = [UIUserNotificationSettings settingsForTypes: self.types categories: catagories];
+    
+    [[UIApplication sharedApplication] registerUserNotificationSettings:mySettings];
+    
+    
     
     
     //Alert the user if they switch apps and the charger is unpluged at time of app switch
@@ -115,7 +119,7 @@
         [notification setTimeZone:[NSTimeZone defaultTimeZone]];
         [notification setSoundName:UILocalNotificationDefaultSoundName];
         
-        NSLog(@"THE NOTIFICATION IS %@", notification.description);
+        // NSLog(@"THE NOTIFICATION IS %@", notification.description);
         
         //Set the notification on the application.
         [[UIApplication sharedApplication] setScheduledLocalNotifications:[NSArray arrayWithObject:notification]];
@@ -132,7 +136,7 @@
         [notification setTimeZone:[NSTimeZone defaultTimeZone]];
         [notification setSoundName:UILocalNotificationDefaultSoundName];
         
-        NSLog(@"THE NOTIFICATION IS %@", notification.description);
+        // NSLog(@"THE NOTIFICATION IS %@", notification.description);
         
         //Set the notification on the application.
         [[UIApplication sharedApplication] setScheduledLocalNotifications:[NSArray arrayWithObject:notification]];
@@ -143,6 +147,8 @@
 - (void)applicationWillEnterForeground:(UIApplication *)application
 {
     // Called as part of the transition from the background to the inactive state; here you can undo many of the changes made on entering the background.
+    
+    
 }
 
 - (void)applicationDidBecomeActive:(UIApplication *)application
@@ -165,6 +171,18 @@
    
     //Set the notification on the application.
     [application setScheduledLocalNotifications:[NSArray arrayWithObject:notification]];
+    
+}
+
+- (void)checkBattery
+{
+    UIDevice *myDevice = [[UIDevice alloc] init];
+    
+    [myDevice setBatteryMonitoringEnabled:YES];
+    
+
+    NSString * levelLabel = [NSString stringWithFormat:@"%ld", myDevice.batteryState];
+    NSLog(@"STATE %@", levelLabel);
     
 }
 
