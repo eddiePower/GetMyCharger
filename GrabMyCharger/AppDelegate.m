@@ -40,6 +40,58 @@
     // If your application supports background execution, this method is called instead of applicationWillTerminate: when the user quits.
     
     
+    //Alert the user if they switch apps and the charger is unpluged at time of app switch
+    // MAY REMOVE THIS ONE LATER.
+    if ([UIDevice currentDevice].batteryState == 1)
+    {
+        NSLog(@"Background charging state is now %ld meaning unplugged!", [UIDevice currentDevice].batteryState);
+        
+        //create and init notification of the local Type = not from server -> apple -> device.
+        UILocalNotification *notification = [[UILocalNotification alloc]init];
+        
+        //set notification message, fireTime 0 seconds = now, using the device timeZone setting.
+        [notification setAlertBody:@"Background charging state is now 1 meaning unplugged!"];
+        [notification setFireDate:[NSDate dateWithTimeIntervalSinceNow:0]];
+        [notification setTimeZone:[NSTimeZone defaultTimeZone]];
+        [notification setSoundName:UILocalNotificationDefaultSoundName];
+        
+        //Set the notification on the application.
+        [application setScheduledLocalNotifications:[NSArray arrayWithObject:notification]];
+    }
+    else if ([UIDevice currentDevice].batteryState == 2)
+    {
+        NSLog(@"Background charging state is now %ld meaning Charging", [UIDevice currentDevice].batteryState);
+        
+        _bgTask = [application beginBackgroundTaskWithName:@"MyTask" expirationHandler:^{
+            // Clean up any unfinished task business by marking where you
+            // stopped or ending the task outright.
+            [application endBackgroundTask:_bgTask];
+            _bgTask = UIBackgroundTaskInvalid;
+        }];
+        
+        // Start the long-running task and return immediately.
+        dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
+            
+            // Do the work associated with the task, preferably in chunks.
+            
+            [application endBackgroundTask:_bgTask];
+            _bgTask = UIBackgroundTaskInvalid;
+        });
+        
+        
+        //create and init notification of the local Type = not from server -> apple -> device.
+        UILocalNotification *notification = [[UILocalNotification alloc]init];
+        
+        //set notification message, fireTime 0 seconds = now, using the device timeZone setting.
+        [notification setAlertBody:@"Background charging state is now 2 meaning Charging!"];
+        [notification setFireDate:[NSDate dateWithTimeIntervalSinceNow:0]];
+        [notification setTimeZone:[NSTimeZone defaultTimeZone]];
+        [notification setSoundName:UILocalNotificationDefaultSoundName];
+        
+        //Set the notification on the application.
+        [application setScheduledLocalNotifications:[NSArray arrayWithObject:notification]];
+    }
+    
 }
 
 - (void)applicationWillEnterForeground:(UIApplication *)application
@@ -47,7 +99,8 @@
     // Called as part of the transition from the background to the inactive state; here you can undo many of the changes made on entering the background.
 }
 
-- (void)applicationDidBecomeActive:(UIApplication *)application {
+- (void)applicationDidBecomeActive:(UIApplication *)application
+{
     // Restart any tasks that were paused (or not yet started) while the application was inactive. If the application was previously in the background, optionally refresh the user interface.
 }
 

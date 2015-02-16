@@ -23,7 +23,7 @@ int secondsLeft;
     
     //Set a notification to tell us when the charger state has changed i.e: unplugged, charging, full.
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(batteryStateChanged:)
-                                                 name:UIDeviceBatteryStateDidChangeNotification object:nil];
+                                                 name:UIDeviceBatteryStateDidChangeNotification object: self.myDevice];
     
     //set timer for 5Mins = 300
     [self resetTimer: 10];
@@ -112,7 +112,7 @@ int secondsLeft;
     NSLog(@"The battery state has changed it is now %ld", self.myDevice.batteryState);
     
     //Check the battery states to alert user when needed.
-    if (self.myDevice.batteryState == 2)
+    if (self.myDevice.batteryState == 3)
     {
         self.chargerStateLabel.text = @"Charging!!";
         //Work out what is needed for plugged in state??
