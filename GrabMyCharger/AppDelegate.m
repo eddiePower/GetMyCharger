@@ -57,7 +57,7 @@
     UILocalNotification *notification = [[UILocalNotification alloc]init];
     
     //set notification message, fireTime 0 seconds = now, using the device timeZone setting.
-    [notification setAlertBody:@"To Continue using GrabMyCharger's monitoring service please restart the app\nYou are now not going to be reminded about your charger."];
+    [notification setAlertBody:@"You Quit GrabMyCharger monitoring service! We cant protect your charger till you restart the app."];
     [notification setFireDate:[NSDate dateWithTimeIntervalSinceNow:0]];
     [notification setTimeZone:[NSTimeZone defaultTimeZone]];
    
