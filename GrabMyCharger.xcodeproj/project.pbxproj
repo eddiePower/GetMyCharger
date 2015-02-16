@@ -7,10 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		892997341A91A0B700E5A981 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 892997331A91A0B700E5A981 /* CoreLocation.framework */; };
 		89E0E0381A91717800C57698 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 89E0E0371A91717800C57698 /* main.m */; };
 		89E0E03B1A91717800C57698 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 89E0E03A1A91717800C57698 /* AppDelegate.m */; };
 		89E0E03E1A91717800C57698 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 89E0E03D1A91717800C57698 /* ViewController.m */; };
-		89E0E0411A91717800C57698 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 89E0E03F1A91717800C57698 /* Main.storyboard */; };
+		89E0E0411A91717800C57698 /* Main_iphone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 89E0E03F1A91717800C57698 /* Main_iphone.storyboard */; };
 		89E0E0431A91717800C57698 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 89E0E0421A91717800C57698 /* Images.xcassets */; };
 		89E0E0461A91717800C57698 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 89E0E0441A91717800C57698 /* LaunchScreen.xib */; };
 		89E0E0521A91717800C57698 /* GrabMyChargerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 89E0E0511A91717800C57698 /* GrabMyChargerTests.m */; };
@@ -27,6 +28,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		892997331A91A0B700E5A981 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		89E0E0321A91717800C57698 /* GrabMyCharger.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GrabMyCharger.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		89E0E0361A91717800C57698 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		89E0E0371A91717800C57698 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -34,7 +36,7 @@
 		89E0E03A1A91717800C57698 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		89E0E03C1A91717800C57698 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		89E0E03D1A91717800C57698 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		89E0E0401A91717800C57698 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		89E0E0401A91717800C57698 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iphone.storyboard; sourceTree = "<group>"; };
 		89E0E0421A91717800C57698 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		89E0E0451A91717800C57698 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		89E0E04B1A91717800C57698 /* GrabMyChargerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GrabMyChargerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -47,6 +49,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				892997341A91A0B700E5A981 /* CoreLocation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +66,7 @@
 		89E0E0291A91717800C57698 = {
 			isa = PBXGroup;
 			children = (
+				892997331A91A0B700E5A981 /* CoreLocation.framework */,
 				89E0E0341A91717800C57698 /* GrabMyCharger */,
 				89E0E04E1A91717800C57698 /* GrabMyChargerTests */,
 				89E0E0331A91717800C57698 /* Products */,
@@ -85,7 +89,7 @@
 				89E0E03A1A91717800C57698 /* AppDelegate.m */,
 				89E0E03C1A91717800C57698 /* ViewController.h */,
 				89E0E03D1A91717800C57698 /* ViewController.m */,
-				89E0E03F1A91717800C57698 /* Main.storyboard */,
+				89E0E03F1A91717800C57698 /* Main_iphone.storyboard */,
 				89E0E0421A91717800C57698 /* Images.xcassets */,
 				89E0E0441A91717800C57698 /* LaunchScreen.xib */,
 				89E0E0351A91717800C57698 /* Supporting Files */,
@@ -168,6 +172,7 @@
 				TargetAttributes = {
 					89E0E0311A91717800C57698 = {
 						CreatedOnToolsVersion = 6.1.1;
+						DevelopmentTeam = 56MDF7DRJL;
 					};
 					89E0E04A1A91717800C57698 = {
 						CreatedOnToolsVersion = 6.1.1;
@@ -199,7 +204,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				89E0E0411A91717800C57698 /* Main.storyboard in Resources */,
+				89E0E0411A91717800C57698 /* Main_iphone.storyboard in Resources */,
 				89E0E0461A91717800C57698 /* LaunchScreen.xib in Resources */,
 				89E0E0431A91717800C57698 /* Images.xcassets in Resources */,
 			);
@@ -244,12 +249,12 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		89E0E03F1A91717800C57698 /* Main.storyboard */ = {
+		89E0E03F1A91717800C57698 /* Main_iphone.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				89E0E0401A91717800C57698 /* Base */,
 			);
-			name = Main.storyboard;
+			name = Main_iphone.storyboard;
 			sourceTree = "<group>";
 		};
 		89E0E0441A91717800C57698 /* LaunchScreen.xib */ = {
@@ -345,6 +350,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = GrabMyCharger/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -355,6 +361,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = GrabMyCharger/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -414,6 +421,7 @@
 				89E0E0571A91717800C57698 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		89E0E0581A91717800C57698 /* Build configuration list for PBXNativeTarget "GrabMyChargerTests" */ = {
 			isa = XCConfigurationList;
@@ -422,6 +430,7 @@
 				89E0E05A1A91717800C57698 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
