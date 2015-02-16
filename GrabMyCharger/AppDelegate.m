@@ -77,7 +77,7 @@
     UIMutableUserNotificationCategory *acceptCatagory = [[UIMutableUserNotificationCategory alloc] init];
     acceptCatagory.identifier = @"ACCEPT_CATAGORY";
     [acceptCatagory setActions:@[acceptAction, declineAction] forContext:UIUserNotificationActionContextDefault];
-    [acceptCatagory setActions:@[acceptCatagory, declineAction] forContext:UIUserNotificationActionContextMinimal];
+    [acceptCatagory setActions:@[acceptAction, declineAction] forContext:UIUserNotificationActionContextMinimal];
     
     //Register Action Catagories
     NSSet *catagories = [NSSet setWithObjects:acceptCatagory, nil];
