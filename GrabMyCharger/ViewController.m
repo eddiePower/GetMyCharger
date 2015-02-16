@@ -122,7 +122,7 @@ int secondsLeft;
         self.chargerStateLabel.text = @"unplugged!!";
         
         //ENTRY POINT for method calls to alert the user to take their charger with them.
-        
+        // May be do this via a notification if the app is not running!! needs more thinking time.
     }
     
 }

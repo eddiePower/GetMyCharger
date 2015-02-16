@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		892997341A91A0B700E5A981 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 892997331A91A0B700E5A981 /* CoreLocation.framework */; };
+		892997381A91D6CE00E5A981 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = 892997371A91D6CE00E5A981 /* README.md */; };
 		89E0E0381A91717800C57698 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 89E0E0371A91717800C57698 /* main.m */; };
 		89E0E03B1A91717800C57698 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 89E0E03A1A91717800C57698 /* AppDelegate.m */; };
 		89E0E03E1A91717800C57698 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 89E0E03D1A91717800C57698 /* ViewController.m */; };
@@ -29,6 +30,7 @@
 
 /* Begin PBXFileReference section */
 		892997331A91A0B700E5A981 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		892997371A91D6CE00E5A981 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		89E0E0321A91717800C57698 /* GrabMyCharger.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GrabMyCharger.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		89E0E0361A91717800C57698 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		89E0E0371A91717800C57698 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -66,6 +68,7 @@
 		89E0E0291A91717800C57698 = {
 			isa = PBXGroup;
 			children = (
+				892997371A91D6CE00E5A981 /* README.md */,
 				892997331A91A0B700E5A981 /* CoreLocation.framework */,
 				89E0E0341A91717800C57698 /* GrabMyCharger */,
 				89E0E04E1A91717800C57698 /* GrabMyChargerTests */,
@@ -226,6 +229,7 @@
 			files = (
 				89E0E03E1A91717800C57698 /* ViewController.m in Sources */,
 				89E0E03B1A91717800C57698 /* AppDelegate.m in Sources */,
+				892997381A91D6CE00E5A981 /* README.md in Sources */,
 				89E0E0381A91717800C57698 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
