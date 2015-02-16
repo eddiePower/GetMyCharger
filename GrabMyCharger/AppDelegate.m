@@ -93,14 +93,7 @@
         
         //create and init notification of the local Type = not from server -> apple -> device.
         UILocalNotification *notification = [[UILocalNotification alloc]init];
-        
-        
-        
-        
-        
-        
-        
-        
+        [notification setCategory:@"ACCEPT_CATAGORY"];
         //set notification message, fireTime 0 seconds = now, using the device timeZone setting.
         [notification setAlertBody:@"Background charging state is now 1 meaning unplugged!"];
         [notification setFireDate:[NSDate dateWithTimeIntervalSinceNow:0]];
@@ -115,7 +108,7 @@
         NSLog(@"Background charging state is now %ld meaning Charging", [UIDevice currentDevice].batteryState);
         //create and init notification
         UILocalNotification *notification = [[UILocalNotification alloc]init];
-        notification.category = @"ACCEPT_CATAGORY";
+        [notification setCategory: @"ACCEPT_CATAGORY"];
         //set notification message, fireTime 0 seconds = now, using the device timeZone setting.
         [notification setAlertBody:@"Background charging state is now 2 meaning Charging!"];
         [notification setFireDate:[NSDate dateWithTimeIntervalSinceNow:0]];
@@ -130,7 +123,7 @@
         NSLog(@"Background charging state is now %ld meaning Battery Full", [UIDevice currentDevice].batteryState);
         //create and init notification
         UILocalNotification *notification = [[UILocalNotification alloc]init];
-        notification.category = @"ACCEPT_CATAGORY";
+        [notification setCategory: @"ACCEPT_CATAGORY"];
         //set notification message, fireTime 0 seconds = now, using the device timeZone setting.
         [notification setAlertBody:@"Background charging state is now 3 meaning Battery Full!"];
         [notification setFireDate:[NSDate dateWithTimeIntervalSinceNow:0]];
