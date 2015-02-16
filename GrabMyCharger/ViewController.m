@@ -20,6 +20,11 @@ int secondsLeft;
     self.myDevice = [UIDevice currentDevice];
     self.timer = [[NSTimer alloc] init];
     
+    
+    //Set a notification to tell us when the charger state has changed i.e: unplugged, charging, full.
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(batteryStateChanged:)
+                                                 name:UIDeviceBatteryStateDidChangeNotification object:nil];
+    
     //set timer for 5Mins = 300
     [self resetTimer: 10];
     
@@ -44,12 +49,12 @@ int secondsLeft;
         // Note that enabling monitoring only triggers a UIDeviceBatteryStateDidChangeNotification;
         // a UIDeviceBatteryLevelDidChangeNotification is not sent.
         
-        self.chargerStateLabel.text = @"Monitoring on!";
+        //self.chargerStateLabel.text = @"Monitoring on!";
     }
     else
     {
         self.myDevice.batteryMonitoringEnabled = NO;
-        self.chargerStateLabel.text = @"Monitoring off!";
+        //self.chargerStateLabel.text = @"Monitoring off!";
         
     }
 }
@@ -99,5 +104,30 @@ int secondsLeft;
     self.timer = [NSTimer scheduledTimerWithTimeInterval:1.0f target:self selector:@selector(updateCounter:) userInfo:nil repeats:YES];
     
 }
+
+
+- (void)batteryStateChanged:(NSNotification *)notification
+{
+    //Debug info:
+    NSLog(@"The battery state has changed it is now %ld", self.myDevice.batteryState);
+    
+    //Check the battery states to alert user when needed.
+    if (self.myDevice.batteryState == 2)
+    {
+        self.chargerStateLabel.text = @"Charging";
+        //Work out what is needed for plugged in state??
+    }
+    else if (self.myDevice.batteryState == 1)
+    {
+        self.chargerStateLabel.text = @"unplugged!!";
+        
+        //ENTRY POINT for method calls to alert the user to take their charger with them.
+        
+    }
+    
+}
+
+
+
 
 @end

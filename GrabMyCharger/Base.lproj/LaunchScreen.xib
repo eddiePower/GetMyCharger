@@ -10,23 +10,43 @@
             <rect key="frame" x="0.0" y="0.0" width="480" height="480"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Grab My Charger" textAlignment="center" lineBreakMode="middleTruncation" baselineAdjustment="alignBaselines" minimumFontSize="18" translatesAutoresizingMaskIntoConstraints="NO" id="kId-c2-rCX">
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Grab My Charger" textAlignment="center" lineBreakMode="middleTruncation" baselineAdjustment="alignBaselines" minimumFontSize="18" translatesAutoresizingMaskIntoConstraints="NO" id="kId-c2-rCX">
                     <rect key="frame" x="14" y="63" width="441" height="43"/>
                     <fontDescription key="fontDescription" type="boldSystem" pointSize="36"/>
                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                     <nil key="highlightedColor"/>
                 </label>
-                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Copyright (c) 2015 Linda &amp; Dave McMillan.                                   All rights reserved." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="AhW-X3-ebv">
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Copyright (c) 2015 Linda &amp; Dave McMillan.  All rights reserved." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="AhW-X3-ebv">
                     <rect key="frame" x="75" y="388" width="331.5" height="50"/>
                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                     <nil key="highlightedColor"/>
                 </label>
+                <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="GMC_Main" translatesAutoresizingMaskIntoConstraints="NO" id="W0y-oO-7h0">
+                    <rect key="frame" x="119" y="152" width="175" height="175"/>
+                </imageView>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="AhW-X3-ebv" secondAttribute="bottom" constant="42" id="040-9v-znK"/>
+                <constraint firstAttribute="bottom" secondItem="kId-c2-rCX" secondAttribute="bottom" constant="374" id="3I3-7s-s77"/>
+                <constraint firstItem="AhW-X3-ebv" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="75" id="L5F-YA-Zfn"/>
+                <constraint firstItem="AhW-X3-ebv" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="388" id="QJU-yN-u6X"/>
+                <constraint firstItem="W0y-oO-7h0" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="152" id="icZ-Ba-cNJ"/>
+                <constraint firstAttribute="trailing" secondItem="kId-c2-rCX" secondAttribute="trailing" constant="25" id="ki4-Ex-oCG"/>
+                <constraint firstItem="W0y-oO-7h0" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="119" id="pmm-fB-3iT"/>
+                <constraint firstAttribute="trailing" secondItem="AhW-X3-ebv" secondAttribute="trailing" constant="73.5" id="ql4-pQ-heg"/>
+                <constraint firstItem="kId-c2-rCX" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="14" id="r5d-xl-3Bh"/>
+                <constraint firstAttribute="bottom" secondItem="W0y-oO-7h0" secondAttribute="bottom" constant="153" id="uci-ti-HPS"/>
+                <constraint firstItem="kId-c2-rCX" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="63" id="w6y-aP-pdz"/>
+            </constraints>
             <nil key="simulatedStatusBarMetrics"/>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <variation key="widthClass=compact"/>
             <point key="canvasLocation" x="557" y="455"/>
         </view>
     </objects>
+    <resources>
+        <image name="GMC_Main" width="175" height="175"/>
+    </resources>
 </document>
