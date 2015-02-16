@@ -18,11 +18,11 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
 
+    //Ask user permission to show notifications from our app, this allows for badge,sound & alertBar.
     if ([UIApplication instancesRespondToSelector:@selector(registerUserNotificationSettings:)])
     {
         [application registerUserNotificationSettings:[UIUserNotificationSettings settingsForTypes:UIUserNotificationTypeAlert|UIUserNotificationTypeBadge|UIUserNotificationTypeSound categories:nil]];
     }
-    // Override point for customization after application launch.
     
     
     return YES;
@@ -51,12 +51,17 @@
 
 - (void)applicationWillTerminate:(UIApplication *)application
 {
-    // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
+    //Prepare App notification that states the user should keep the app running if they wish to be reminded about their charger status! Important may need re wording of message.
     
+    //create and init notification of the local Type = not from server -> apple -> device.
     UILocalNotification *notification = [[UILocalNotification alloc]init];
+    
+    //set notification message, fireTime 0 seconds = now, using the device timeZone setting.
     [notification setAlertBody:@"To Continue using GrabMyCharger's monitoring service please restart the app\nYou are now not going to be reminded about your charger."];
-    [notification setFireDate:[NSDate dateWithTimeIntervalSinceNow:1]];
+    [notification setFireDate:[NSDate dateWithTimeIntervalSinceNow:0]];
     [notification setTimeZone:[NSTimeZone defaultTimeZone]];
+   
+    //Set the notification on the application.
     [application setScheduledLocalNotifications:[NSArray arrayWithObject:notification]];
     
 }

@@ -57,11 +57,14 @@ int secondsLeft;
 
 -(void)updateCounter:(NSTimer *)theTimer
 {
+    //if the counter has timer above 0 then run loop.
     if (secondsLeft > 0)
     {
         //deduct one second
         secondsLeft--;
         
+        //do math magic on secondsLeft value to turn it into human readable time hh:mm:ss
+        // may shorten it to just mm:ss
         hours = secondsLeft / 3600; //=60seconds * 60 = 1 hr.
         minutes = (secondsLeft % 3600) / 60;
         seconds = (secondsLeft % 3600) % 60;
@@ -71,19 +74,25 @@ int secondsLeft;
     }
     else
     {
+        //Prepare the alertBox View.
         UIAlertView *chargerAlert = [[UIAlertView alloc] initWithTitle:@"GrabMyCharger" message:@"Dont Forget Your Charger!" delegate: self cancelButtonTitle:@"Got It" otherButtonTitles:@"Remind in 5", nil];
        
+        //Show the alert box
         [chargerAlert show];
         
+        //!! reset the timer this will be done via the alert box soon!!
         [self resetTimer: 300];
     }
 }
 
+//method to reset timer countdown to a user set or programed int value ie: 100 seconds = 1:30
 -(void)resetTimer:(int)timePeriod
 {
     secondsLeft = timePeriod;
 }
 
+//Main Timer Method to run the timer counting via 1second using the updateCounter method
+// !! may need to use a bool variable to set if the timer repeates or not, so user and car mode can disable timer. !!
 -(void)countdownTimer
 {
     //Start the timer counting down by using the method UpdateCounter
