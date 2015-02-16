@@ -112,17 +112,21 @@ int secondsLeft;
     NSLog(@"The battery state has changed it is now %ld", self.myDevice.batteryState);
     
     //Check the battery states to alert user when needed.
-    if (self.myDevice.batteryState == 3)
+    if (self.myDevice.batteryState == 1)
     {
-        self.chargerStateLabel.text = @"Charging!!";
+        self.chargerStateLabel.text = @"Unplugged!";
         //Work out what is needed for plugged in state??
     }
-    else if (self.myDevice.batteryState == 1)
+    else if (self.myDevice.batteryState == 2)
     {
-        self.chargerStateLabel.text = @"unplugged!";
+        self.chargerStateLabel.text = @"Charging!!";
         
         //ENTRY POINT for method calls to alert the user to take their charger with them.
         // May be do this via a notification if the app is not running!! needs more thinking time.
+    }
+    else if(self.myDevice.batteryState == 3)
+    {
+        self.chargerStateLabel.text = @"Battery Full!!!";
     }
     else
     {

@@ -71,8 +71,8 @@
 		89E0E0291A91717800C57698 = {
 			isa = PBXGroup;
 			children = (
-				8929973C1A9201DD00E5A981 /* UIKit.framework */,
 				892997371A91D6CE00E5A981 /* README.md */,
+				8929973C1A9201DD00E5A981 /* UIKit.framework */,
 				892997331A91A0B700E5A981 /* CoreLocation.framework */,
 				89E0E0341A91717800C57698 /* GrabMyCharger */,
 				89E0E04E1A91717800C57698 /* GrabMyChargerTests */,
@@ -180,6 +180,11 @@
 					89E0E0311A91717800C57698 = {
 						CreatedOnToolsVersion = 6.1.1;
 						DevelopmentTeam = 56MDF7DRJL;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 0;
+							};
+						};
 					};
 					89E0E04A1A91717800C57698 = {
 						CreatedOnToolsVersion = 6.1.1;

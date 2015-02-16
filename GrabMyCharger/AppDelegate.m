@@ -10,6 +10,8 @@
 
 @interface AppDelegate ()
 
+@property (nonatomic) UIUserNotificationType types;
+
 @end
 
 @implementation AppDelegate
@@ -17,13 +19,56 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-
+    self.types = UIUserNotificationTypeBadge | UIUserNotificationTypeSound | UIUserNotificationTypeAlert;
+    
+    //Set up a Accept Action for notification.
+    UIMutableUserNotificationAction *acceptAction = [[UIMutableUserNotificationAction alloc] init];
+    acceptAction.identifier = @"ACCEPT_IDENTIFIER";
+    acceptAction.title = @"Accept";
+    acceptAction.activationMode = UIUserNotificationActivationModeBackground;
+    acceptAction.destructive = NO;
+    acceptAction.authenticationRequired = NO;
+    
+    //Set up a Maybe Action for notification.
+    UIMutableUserNotificationAction *maybeAction = [[UIMutableUserNotificationAction alloc] init];
+    maybeAction.identifier = @"MAYBE_IDENTIFIER";
+    maybeAction.title = @"MayBe";
+    maybeAction.activationMode = UIUserNotificationActivationModeBackground;
+    maybeAction.destructive = NO;
+    maybeAction.authenticationRequired = NO;
+    
+    //Set up a decline Action for notification.
+    UIMutableUserNotificationAction *declineAction = [[UIMutableUserNotificationAction alloc] init];
+    declineAction.identifier = @"DECLINE_IDENTIFIER";
+    declineAction.title = @"Decline";
+    declineAction.activationMode = UIUserNotificationActivationModeBackground;
+    declineAction.destructive = NO;
+    declineAction.authenticationRequired = NO;
+    
+    //Action catagories for above actions.
+    UIMutableUserNotificationCategory *acceptCatagory = [[UIMutableUserNotificationCategory alloc] init];
+    acceptCatagory.identifier = @"ACCEPT_CATAGORY";
+    [acceptCatagory setActions:@[acceptAction, maybeAction, declineAction] forContext:UIUserNotificationActionContextDefault];
+    [acceptCatagory setActions:@[acceptCatagory, declineAction] forContext:UIUserNotificationActionContextMinimal];
+    
+    //Register Action Catagories
+    NSSet *catagories = [NSSet setWithObjects:acceptCatagory, nil];
+    
+    UIUserNotificationSettings *mySettings = [UIUserNotificationSettings settingsForTypes: self.types categories: catagories];
+    
+    [[UIApplication sharedApplication] registerUserNotificationSettings:mySettings];
+    
+    
+    
+    
     //Ask user permission to show notifications from our app, this allows for badge,sound & alertBar.
     if ([UIApplication instancesRespondToSelector:@selector(registerUserNotificationSettings:)])
     {
         [application registerUserNotificationSettings:[UIUserNotificationSettings settingsForTypes:UIUserNotificationTypeAlert|UIUserNotificationTypeBadge|UIUserNotificationTypeSound categories:nil]];
     }
     
+    //open space for the user defaults to be setup persestant during app run time.
+    self.userDefaults = [[NSUserDefaults alloc] init];
     
     return YES;
 }
@@ -49,6 +94,13 @@
         //create and init notification of the local Type = not from server -> apple -> device.
         UILocalNotification *notification = [[UILocalNotification alloc]init];
         
+        
+        
+        
+        
+        
+        
+        
         //set notification message, fireTime 0 seconds = now, using the device timeZone setting.
         [notification setAlertBody:@"Background charging state is now 1 meaning unplugged!"];
         [notification setFireDate:[NSDate dateWithTimeIntervalSinceNow:0]];
@@ -61,29 +113,26 @@
     else if ([UIDevice currentDevice].batteryState == 2)
     {
         NSLog(@"Background charging state is now %ld meaning Charging", [UIDevice currentDevice].batteryState);
-        
-        _bgTask = [application beginBackgroundTaskWithName:@"MyTask" expirationHandler:^{
-            // Clean up any unfinished task business by marking where you
-            // stopped or ending the task outright.
-            [application endBackgroundTask:_bgTask];
-            _bgTask = UIBackgroundTaskInvalid;
-        }];
-        
-        // Start the long-running task and return immediately.
-        dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
-            
-            // Do the work associated with the task, preferably in chunks.
-            
-            [application endBackgroundTask:_bgTask];
-            _bgTask = UIBackgroundTaskInvalid;
-        });
-        
-        
-        //create and init notification of the local Type = not from server -> apple -> device.
+        //create and init notification
         UILocalNotification *notification = [[UILocalNotification alloc]init];
-        
+        notification.category = @"ACCEPT_CATAGORY";
         //set notification message, fireTime 0 seconds = now, using the device timeZone setting.
         [notification setAlertBody:@"Background charging state is now 2 meaning Charging!"];
+        [notification setFireDate:[NSDate dateWithTimeIntervalSinceNow:0]];
+        [notification setTimeZone:[NSTimeZone defaultTimeZone]];
+        [notification setSoundName:UILocalNotificationDefaultSoundName];
+        
+        //Set the notification on the application.
+        [application setScheduledLocalNotifications:[NSArray arrayWithObject:notification]];
+    }
+    else if ([UIDevice currentDevice].batteryState == 3)
+    {
+        NSLog(@"Background charging state is now %ld meaning Battery Full", [UIDevice currentDevice].batteryState);
+        //create and init notification
+        UILocalNotification *notification = [[UILocalNotification alloc]init];
+        notification.category = @"ACCEPT_CATAGORY";
+        //set notification message, fireTime 0 seconds = now, using the device timeZone setting.
+        [notification setAlertBody:@"Background charging state is now 3 meaning Battery Full!"];
         [notification setFireDate:[NSDate dateWithTimeIntervalSinceNow:0]];
         [notification setTimeZone:[NSTimeZone defaultTimeZone]];
         [notification setSoundName:UILocalNotificationDefaultSoundName];
