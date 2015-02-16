@@ -20,8 +20,8 @@ int secondsLeft;
     self.myDevice = [UIDevice currentDevice];
     self.timer = [[NSTimer alloc] init];
     
-    //set timer for 5Mins
-    secondsLeft = 30;
+    //set timer for 5Mins = 300
+    [self resetTimer: 10];
     
     //call begin count down / timer.
     [self countdownTimer];
