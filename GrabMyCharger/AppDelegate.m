@@ -91,7 +91,7 @@
     }
     
     
-    //[NSTimer scheduledTimerWithTimeInterval:1 target:self selector:@selector(checkBattery) userInfo:nil repeats:YES];
+    [NSTimer scheduledTimerWithTimeInterval:1 target:self selector:@selector(checkBattery) userInfo:nil repeats:YES];
     
     self.types = UIUserNotificationTypeBadge | UIUserNotificationTypeSound | UIUserNotificationTypeAlert;
     
@@ -102,16 +102,7 @@
     acceptAction.activationMode = UIUserNotificationActivationModeBackground;
     acceptAction.destructive = NO;
     acceptAction.authenticationRequired = NO;
-    
-    /*
-    //Set up a Maybe Action for notification.
-    UIMutableUserNotificationAction *maybeAction = [[UIMutableUserNotificationAction alloc] init];
-    maybeAction.identifier = @"MAYBE_IDENTIFIER";
-    maybeAction.title = @"MayBe";
-    maybeAction.activationMode = UIUserNotificationActivationModeBackground;
-    maybeAction.destructive = NO;
-    maybeAction.authenticationRequired = NO;
-    */
+
     //Set up a decline Action for notification.
     UIMutableUserNotificationAction *declineAction = [[UIMutableUserNotificationAction alloc] init];
     declineAction.identifier = @"DECLINE_IDENTIFIER";
@@ -239,6 +230,58 @@
 
     NSString * levelLabel = [NSString stringWithFormat:@"%ld", [UIDevice currentDevice].batteryState];
     NSLog(@"STATE %@", levelLabel);
+    //Alert the user if they switch apps and the charger is unpluged at time of app switch
+    // MAY REMOVE THIS ONE LATER.
+    if ([UIDevice currentDevice].batteryState == 1)
+    {
+        NSLog(@"Background charging state is now %ld meaning unplugged!", [UIDevice currentDevice].batteryState);
+        
+        //create and init notification of the local Type = not from server -> apple -> device.
+        UILocalNotification *notification = [[UILocalNotification alloc]init];
+        [notification setCategory:@"ACCEPT_CATAGORY"];
+        //set notification message, fireTime 0 seconds = now, using the device timeZone setting.
+        [notification setAlertBody:@"Background charging state is now 1 meaning unplugged!"];
+        [notification setFireDate:[NSDate dateWithTimeIntervalSinceNow:0]];
+        [notification setTimeZone:[NSTimeZone defaultTimeZone]];
+        [notification setSoundName:UILocalNotificationDefaultSoundName];
+        
+        //Set the notification on the application.
+        [[UIApplication sharedApplication] setScheduledLocalNotifications:[NSArray arrayWithObject:notification]];
+    }
+    else if ([UIDevice currentDevice].batteryState == 2)
+    {
+        NSLog(@"Background charging state is now %ld meaning Charging", [UIDevice currentDevice].batteryState);
+        //create and init notification
+        UILocalNotification *notification = [[UILocalNotification alloc]init];
+        [notification setCategory: @"ACCEPT_CATAGORY"];
+        //set notification message, fireTime 0 seconds = now, using the device timeZone setting.
+        [notification setAlertBody:@"Background charging state is now 2 meaning Charging!"];
+        [notification setFireDate:[NSDate dateWithTimeIntervalSinceNow:0]];
+        [notification setTimeZone:[NSTimeZone defaultTimeZone]];
+        [notification setSoundName:UILocalNotificationDefaultSoundName];
+        
+        // NSLog(@"THE NOTIFICATION IS %@", notification.description);
+        
+        //Set the notification on the application.
+        [[UIApplication sharedApplication] setScheduledLocalNotifications:[NSArray arrayWithObject:notification]];
+    }
+    else if ([UIDevice currentDevice].batteryState == 3)
+    {
+        NSLog(@"Background charging state is now %ld meaning Battery Full", [UIDevice currentDevice].batteryState);
+        //create and init notification
+        UILocalNotification *notification = [[UILocalNotification alloc]init];
+        [notification setCategory: @"ACCEPT_CATAGORY"];
+        //set notification message, fireTime 0 seconds = now, using the device timeZone setting.
+        [notification setAlertBody:@"Background charging state is now 3 meaning Battery Full!"];
+        [notification setFireDate:[NSDate dateWithTimeIntervalSinceNow:0]];
+        [notification setTimeZone:[NSTimeZone defaultTimeZone]];
+        [notification setSoundName:UILocalNotificationDefaultSoundName];
+        
+        // NSLog(@"THE NOTIFICATION IS %@", notification.description);
+        
+        //Set the notification on the application.
+        [[UIApplication sharedApplication] setScheduledLocalNotifications:[NSArray arrayWithObject:notification]];
+    }
     
 }
 
