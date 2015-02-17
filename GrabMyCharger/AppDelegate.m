@@ -230,6 +230,21 @@
 
     NSString * levelLabel = [NSString stringWithFormat:@"%ld", [UIDevice currentDevice].batteryState];
     NSLog(@"STATE %@", levelLabel);
+    
+    //Set a notification to tell us when the charger state has changed i.e: unplugged, charging, full.
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(batteryStateChanged:)
+                                                 name:UIDeviceBatteryStateDidChangeNotification object: [UIDevice currentDevice]];
+    
+    
+}
+
+
+- (void)batteryStateChanged:(NSNotification *)notification
+{
+    //Debug info:
+    NSLog(@"The battery state has changed it is now %ld", [UIDevice currentDevice].batteryState);
+    
+    //Check the battery states to alert user when needed.
     //Alert the user if they switch apps and the charger is unpluged at time of app switch
     // MAY REMOVE THIS ONE LATER.
     if ([UIDevice currentDevice].batteryState == 1)
@@ -281,52 +296,6 @@
         
         //Set the notification on the application.
         [[UIApplication sharedApplication] setScheduledLocalNotifications:[NSArray arrayWithObject:notification]];
-    }
-    
-}
-
-
-- (void)batteryStateChanged:(NSNotification *)notification
-{
-    //Debug info:
-    NSLog(@"The battery state has changed it is now %ld", [UIDevice currentDevice].batteryState);
-    
-    //Check the battery states to alert user when needed.
-    if ([UIDevice currentDevice].batteryState == 1)
-    {
-        NSLog(@"\nUnplugged!");
-        //Work out what is needed for plugged in state??
-        //create and init notification of the local Type = not from server -> apple -> device.
-        UILocalNotification *notification = [[UILocalNotification alloc]init];
-        [notification setCategory:@"ACCEPT_CATAGORY"];
-        //set notification message, fireTime 0 seconds = now, using the device timeZone setting.
-        [notification setAlertBody:@"Background charging state is now 1 meaning unplugged!"];
-        [notification setFireDate:[NSDate dateWithTimeIntervalSinceNow:0]];
-        [notification setTimeZone:[NSTimeZone defaultTimeZone]];
-        [notification setSoundName:UILocalNotificationDefaultSoundName];
-        
-        //Set the notification on the application.
-        [[UIApplication sharedApplication] setScheduledLocalNotifications:[NSArray arrayWithObject:notification]];
-        
-    }
-    else if ([UIDevice currentDevice].batteryState == 2)
-    {
-        NSLog(@"Charging!!");
-        
-        //ENTRY POINT for method calls to alert the user to take their charger with them.
-        // May be do this via a notification if the app is not running!! needs more thinking time.
-    }
-    else if([UIDevice currentDevice].batteryState == 3)
-    {
-        NSLog(@"Battery Full!!!");
-    }
-    else if([UIDevice currentDevice].batteryState == 0)
-    {
-        NSLog(@"Prob simulator or a Error Charging.");
-    }
-    else
-    {
-        NSLog(@"Unknown-!");
     }
 }
 
