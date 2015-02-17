@@ -9,7 +9,7 @@
 #import <UIKit/UIKit.h>
 @import CoreLocation;
 
-@interface AppDelegate : UIResponder <UIApplicationDelegate>
+@interface AppDelegate : UIResponder <UIApplicationDelegate, CLLocationManagerDelegate>
 
 @property (strong, nonatomic) UIWindow *window;
 
@@ -21,6 +21,7 @@
 
 @property(strong, nonatomic) CLLocationManager *locationManager;
 
+@property int inBackground;
 
 @end
 

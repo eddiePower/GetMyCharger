@@ -40,12 +40,13 @@
 #endif
     
     [self.locationManager startUpdatingLocation];
+    [self.locationManager startUpdatingHeading];
+
     
     //Set desired accuracy as high as feasable due to purpose of the app.
     //may set a switch in settings to lower the accuracy to save battery life.
     self.locationManager.distanceFilter = kCLLocationAccuracyBest;
     //self.locationManager.distanceFilter = kCLLocationAccuracyNearestTenMeters;
-    
     
     //Set locationManager accuracy and distance filter or amount of space before device location is checked.
     // default is kCLDistanceFilterNone: all movements are reported.
@@ -53,7 +54,7 @@
     self.locationManager.desiredAccuracy = kCLLocationAccuracyBest;
     //self.locationManager.desiredAccuracy = kCLLocationAccuracyNearestTenMeters;
     self.locationManager.distanceFilter = 5.0f;
-    
+    self.locationManager.delegate = self;
 
     
     return YES;
@@ -70,6 +71,8 @@
     // Use this method to release shared resources, save user data, invalidate timers, and store enough application state information to restore your application to its current state in case it is terminated later.
     // If your application supports background execution, this method is called instead of applicationWillTerminate: when the user quits.
     
+    //set flag for inBackground to let the location methods know.
+    self.inBackground = 1;
     
     //Check background GPS monitoring is available
     if ([CLLocationManager significantLocationChangeMonitoringAvailable])
@@ -91,7 +94,7 @@
     }
     
     
-    [NSTimer scheduledTimerWithTimeInterval:1 target:self selector:@selector(checkBattery) userInfo:nil repeats:YES];
+    //[NSTimer scheduledTimerWithTimeInterval:5 target:self selector:@selector(checkBattery) userInfo:nil repeats:YES];
     
     self.types = UIUserNotificationTypeBadge | UIUserNotificationTypeSound | UIUserNotificationTypeAlert;
     
@@ -124,11 +127,7 @@
     
     [[UIApplication sharedApplication] registerUserNotificationSettings:mySettings];
     
-    //Set a notification to tell us when the charger state has changed i.e: unplugged, charging, full.
-    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(batteryStateChanged:)
-                                                 name:UIDeviceBatteryStateDidChangeNotification object: [UIDevice currentDevice]];
-    
-    
+    /*
     //Alert the user if they switch apps and the charger is unpluged at time of app switch
     // MAY REMOVE THIS ONE LATER.
     if ([UIDevice currentDevice].batteryState == 1)
@@ -181,6 +180,7 @@
         //Set the notification on the application.
         [[UIApplication sharedApplication] setScheduledLocalNotifications:[NSArray arrayWithObject:notification]];
     }
+     */
     
 }
 
@@ -194,6 +194,44 @@
     completionHandler();
 }
 
+-(void)locationManager:(CLLocationManager *)manager didUpdateLocations:(NSArray *)locations
+{
+    //if inBg flag is set to true or 1 then run BG stuff
+    
+    if (self.inBackground == 1)
+    {
+    //Set a notification to tell us when the charger state has changed i.e: unplugged, charging, full.
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(batteryStateChanged:)
+                                                 name:UIDeviceBatteryStateDidChangeNotification object: [UIDevice currentDevice]];
+        
+        NSLog(@"The inBG flag is set to %i", self.inBackground);
+        
+    }
+    else
+    {
+        
+    }
+}
+
+-(void)locationManager:(CLLocationManager *)manager didUpdateHeading:(CLHeading *)newHeading
+{
+    //if inBg flag is set to true or 1 then run BG stuff
+    
+    if (self.inBackground == 1)
+    {
+        NSLog(@"In DidUpdate Heading Method of appDelegate / locationManagerDelegate.");
+        //Set a notification to tell us when the charger state has changed i.e: unplugged, charging, full.
+        [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(batteryStateChanged:)
+                                                 name:UIDeviceBatteryStateDidChangeNotification object: [UIDevice currentDevice]];
+        NSLog(@"The inBG flag is set to %i", self.inBackground);
+        
+    }
+    else
+    {
+        
+    }
+}
+
 - (void)applicationWillEnterForeground:(UIApplication *)application
 {
     // Called as part of the transition from the background to the inactive state; here you can undo many of the changes made on entering the background.
@@ -205,6 +243,7 @@
 {
     // Restart any tasks that were paused (or not yet started) while the application was inactive. If the application was previously in the background, optionally refresh the user interface.
     NSLog(@"ApplicationDidBecomeActive method running...");
+    self.inBackground = 0;
 }
 
 - (void)applicationWillTerminate:(UIApplication *)application
@@ -225,6 +264,9 @@
     
 }
 
+
+
+/*
 - (void)checkBattery
 {
 
@@ -234,9 +276,9 @@
     //Set a notification to tell us when the charger state has changed i.e: unplugged, charging, full.
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(batteryStateChanged:)
                                                  name:UIDeviceBatteryStateDidChangeNotification object: [UIDevice currentDevice]];
-    
-    
 }
+*/
+
 
 
 - (void)batteryStateChanged:(NSNotification *)notification
