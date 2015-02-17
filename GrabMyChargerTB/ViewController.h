@@ -10,6 +10,12 @@
 
 @interface ViewController : UIViewController
 
+@property (weak, nonatomic) IBOutlet UITextField *chargerStateLabel;
+@property (weak, nonatomic)UIDevice *myDevice;
+
+- (IBAction)setCarModeSwitch:(id)sender;
+
+
 
 @end
 

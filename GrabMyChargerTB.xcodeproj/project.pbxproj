@@ -14,6 +14,8 @@
 		C12F1CF61A9361C2007C4DA1 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C12F1CF51A9361C2007C4DA1 /* Images.xcassets */; };
 		C12F1CF91A9361C2007C4DA1 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = C12F1CF71A9361C2007C4DA1 /* LaunchScreen.xib */; };
 		C12F1D051A9361C2007C4DA1 /* GrabMyChargerTBTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C12F1D041A9361C2007C4DA1 /* GrabMyChargerTBTests.m */; };
+		C12F1D0F1A93678F007C4DA1 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C12F1D0E1A93678F007C4DA1 /* CoreLocation.framework */; };
+		C12F1D111A936795007C4DA1 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C12F1D101A936795007C4DA1 /* UIKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +42,8 @@
 		C12F1CFE1A9361C2007C4DA1 /* GrabMyChargerTBTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GrabMyChargerTBTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C12F1D031A9361C2007C4DA1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C12F1D041A9361C2007C4DA1 /* GrabMyChargerTBTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GrabMyChargerTBTests.m; sourceTree = "<group>"; };
+		C12F1D0E1A93678F007C4DA1 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		C12F1D101A936795007C4DA1 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +51,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C12F1D111A936795007C4DA1 /* UIKit.framework in Frameworks */,
+				C12F1D0F1A93678F007C4DA1 /* CoreLocation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +69,8 @@
 		C12F1CDC1A9361C2007C4DA1 = {
 			isa = PBXGroup;
 			children = (
+				C12F1D101A936795007C4DA1 /* UIKit.framework */,
+				C12F1D0E1A93678F007C4DA1 /* CoreLocation.framework */,
 				C12F1CE71A9361C2007C4DA1 /* GrabMyChargerTB */,
 				C12F1D011A9361C2007C4DA1 /* GrabMyChargerTBTests */,
 				C12F1CE61A9361C2007C4DA1 /* Products */,
@@ -168,6 +176,11 @@
 				TargetAttributes = {
 					C12F1CE41A9361C2007C4DA1 = {
 						CreatedOnToolsVersion = 6.1.1;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+						};
 					};
 					C12F1CFD1A9361C2007C4DA1 = {
 						CreatedOnToolsVersion = 6.1.1;
