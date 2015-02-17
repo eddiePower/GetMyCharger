@@ -303,9 +303,6 @@
         
         if (self.inBackground == 1)
         {
-            //create and init notification of the local Type = not from server -> apple -> device.
-            if (self.inBackground == 1)
-            {
                 if (self.lastBatteryState != [UIDevice currentDevice].batteryState)
                 {
                UILocalNotification *notification = [[UILocalNotification alloc]init];
@@ -324,7 +321,7 @@
                     //spit out the new battery state in storage.
                     NSLog(@"Stored Battery State is now %i", self.lastBatteryState);
                 }
-            }
+            
         }
         else  // alert user with app in the foreground.
         {
@@ -358,6 +355,10 @@
                 NSLog(@"Stored Battery State is now %i", self.lastBatteryState);
             }
         }
+        else  // alert user with app in the foreground.
+        {
+            //set up an alert box for when user unplugs while in the app!!!!
+        }
     }
     else if ([UIDevice currentDevice].batteryState == 3)
     {
@@ -385,6 +386,10 @@
                 NSLog(@"Stored Battery State is now %i", self.lastBatteryState);
             }//end if check on batterState stored value
         }//end of if in background check
+        else  // alert user with app in the foreground.
+        {
+            //set up an alert box for when user unplugs while in the app!!!!
+        }
     }//end of battery state check
 }
 
