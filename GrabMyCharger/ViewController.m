@@ -25,12 +25,6 @@ int secondsLeft;
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(batteryStateChanged:)
                                                  name:UIDeviceBatteryStateDidChangeNotification object: self.myDevice];
     
-    //set timer for 5Mins = 300
-    [self resetTimer: 10];
-    
-    //call begin count down / timer.
-    [self countdownTimer];
-    
 }
 
 - (void)didReceiveMemoryWarning
@@ -45,11 +39,13 @@ int secondsLeft;
     if ([sender isOn])
     {
         self.myDevice.batteryMonitoringEnabled = YES;
-        // The UI will be updated as a result of the first UIDeviceBatteryStateDidChangeNotification notification.
-        // Note that enabling monitoring only triggers a UIDeviceBatteryStateDidChangeNotification;
-        // a UIDeviceBatteryLevelDidChangeNotification is not sent.
+       
+        //set timer for 5Mins = 300
+        [self resetTimer: 10];
         
-        //self.chargerStateLabel.text = @"Monitoring on!";
+        //call begin count down / timer.
+        [self countdownTimer];
+
     }
     else
     {
@@ -85,8 +81,12 @@ int secondsLeft;
         //Show the alert box
         [chargerAlert show];
         
+        //update timer label -- may not need this as it will be a blind counter from the users p.o.v.
+        self.timerLabel.text = [NSString stringWithFormat:@"%02d:%02d:%02d", hours, minutes, seconds];
+        
         //!! reset the timer this will be done via the alert box soon!!
-        [self resetTimer: 300];
+        [self resetTimer: 10];
+        
     }
 }
 

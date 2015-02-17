@@ -34,11 +34,16 @@
     self.locationManager = [[CLLocationManager alloc] init];
     //Start updating the location data of the user to begin monitoring regions after app loads.
     
-#if __IPHONE_OS_VERSION_MAX_ALLOWED >= 80000
-    //request permission to use location manager if user has not already granted it.
-    [self.locationManager requestAlwaysAuthorization];
-#endif
     
+    //Macro used to check that device is ios8+ then uses new location authorization
+    #if __IPHONE_OS_VERSION_MAX_ALLOWED >= 80000
+    
+      //request permission to use location manager if user has not already granted it.
+      [self.locationManager requestAlwaysAuthorization];
+    
+    #endif
+    
+    //Start updating the users location and heading / direction.
     [self.locationManager startUpdatingLocation];
     [self.locationManager startUpdatingHeading];
 
@@ -53,7 +58,8 @@
     
     self.locationManager.desiredAccuracy = kCLLocationAccuracyBest;
     //self.locationManager.desiredAccuracy = kCLLocationAccuracyNearestTenMeters;
-    self.locationManager.distanceFilter = 5.0f;
+    
+    //self.locationManager.distanceFilter = 5.0f;
     self.locationManager.delegate = self;
 
     
@@ -74,7 +80,7 @@
     //set flag for inBackground to let the location methods know.
     self.inBackground = 1;
     
-    //Check background GPS monitoring is available
+    //Check background GPS monitoring is available and if so set a listener for batteryStateChanges.
     if ([CLLocationManager significantLocationChangeMonitoringAvailable])
     {
         // Stop normal location updates and start significant location change updates for battery efficiency.
@@ -85,6 +91,7 @@
         [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(batteryStateChanged:)
                                                      name:UIDeviceBatteryStateDidChangeNotification object: [UIDevice currentDevice]];
         
+        //spit out some debug info on location data and battery.
         NSLog(@"Inside appDidEnterBackground and the allowed location change monitoring.\nLocation is now: %f, %f\nBatteryState is now: %li", self.locationManager.location.coordinate.latitude, self.locationManager.location.coordinate.longitude, [UIDevice currentDevice].batteryState);
         
     }
@@ -94,15 +101,17 @@
     }
     
     
+    //call to old timer to trigger notifications each 5 seconds keeping the battery state alive.
     //[NSTimer scheduledTimerWithTimeInterval:5 target:self selector:@selector(checkBattery) userInfo:nil repeats:YES];
     
+    //Alert Types used in Notification Action's catagories
     self.types = UIUserNotificationTypeBadge | UIUserNotificationTypeSound | UIUserNotificationTypeAlert;
     
-    //Set up a Accept Action for notification.
+    //Set up a Accept Action for notification / button on notification that does somthing.
     UIMutableUserNotificationAction *acceptAction = [[UIMutableUserNotificationAction alloc] init];
     acceptAction.identifier = @"ACCEPT_IDENTIFIER";
     acceptAction.title = @"OK Got It";
-    acceptAction.activationMode = UIUserNotificationActivationModeBackground;
+    acceptAction.activationMode = UIUserNotificationActivationModeBackground; //keeps the app in the BG or can call it to FG.
     acceptAction.destructive = NO;
     acceptAction.authenticationRequired = NO;
 
@@ -200,8 +209,8 @@
     
     if (self.inBackground == 1)
     {
-    //Set a notification to tell us when the charger state has changed i.e: unplugged, charging, full.
-    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(batteryStateChanged:)
+        //Set a notification to tell us when the charger state has changed i.e: unplugged, charging, full.
+        [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(batteryStateChanged:)
                                                  name:UIDeviceBatteryStateDidChangeNotification object: [UIDevice currentDevice]];
         
         NSLog(@"The inBG flag is set to %i", self.inBackground);
@@ -216,7 +225,6 @@
 -(void)locationManager:(CLLocationManager *)manager didUpdateHeading:(CLHeading *)newHeading
 {
     //if inBg flag is set to true or 1 then run BG stuff
-    
     if (self.inBackground == 1)
     {
         NSLog(@"In DidUpdate Heading Method of appDelegate / locationManagerDelegate.");
@@ -235,7 +243,7 @@
 - (void)applicationWillEnterForeground:(UIApplication *)application
 {
     // Called as part of the transition from the background to the inactive state; here you can undo many of the changes made on entering the background.
-    
+        self.inBackground = 0;
     
 }
 
@@ -286,28 +294,43 @@
     //Debug info:
     NSLog(@"The battery state has changed it is now %ld", [UIDevice currentDevice].batteryState);
     
-    //Check the battery states to alert user when needed.
+    //Check the battery states to alert user when needed with notification or alert box.
     //Alert the user if they switch apps and the charger is unpluged at time of app switch
     // MAY REMOVE THIS ONE LATER.
     if ([UIDevice currentDevice].batteryState == 1)
     {
         NSLog(@"Background charging state is now %ld meaning unplugged!", [UIDevice currentDevice].batteryState);
         
-        //create and init notification of the local Type = not from server -> apple -> device.
-        UILocalNotification *notification = [[UILocalNotification alloc]init];
-        [notification setCategory:@"ACCEPT_CATAGORY"];
-        //set notification message, fireTime 0 seconds = now, using the device timeZone setting.
-        [notification setAlertBody:@"Background charging state is now 1 meaning unplugged!"];
-        [notification setFireDate:[NSDate dateWithTimeIntervalSinceNow:0]];
-        [notification setTimeZone:[NSTimeZone defaultTimeZone]];
-        [notification setSoundName:UILocalNotificationDefaultSoundName];
+        if (self.inBackground == 1)
+        {
+            //create and init notification of the local Type = not from server -> apple -> device.
+            if (self.inBackground == 1)
+            {
+               UILocalNotification *notification = [[UILocalNotification alloc]init];
+               [notification setCategory:@"ACCEPT_CATAGORY"];
+               //set notification message, fireTime 0 seconds = now, using the device timeZone setting.
+               [notification setAlertBody:@"Background charging state is now 1 meaning unplugged!"];
+               [notification setFireDate:[NSDate dateWithTimeIntervalSinceNow:0]];
+               [notification setTimeZone:[NSTimeZone defaultTimeZone]];
+               [notification setSoundName:UILocalNotificationDefaultSoundName];
+            
+               //Set the notification on the application.
+               [[UIApplication sharedApplication] setScheduledLocalNotifications:[NSArray arrayWithObject:notification]];
+            }
+        }
+        else  // alert user with app in the foreground.
+        {
+            //set up an alert box for when user unplugs while in the app!!!!
+        }
         
-        //Set the notification on the application.
-        [[UIApplication sharedApplication] setScheduledLocalNotifications:[NSArray arrayWithObject:notification]];
+        
     }
     else if ([UIDevice currentDevice].batteryState == 2)
     {
         NSLog(@"Background charging state is now %ld meaning Charging", [UIDevice currentDevice].batteryState);
+        
+        if (self.inBackground == 1)
+        {
         //create and init notification
         UILocalNotification *notification = [[UILocalNotification alloc]init];
         [notification setCategory: @"ACCEPT_CATAGORY"];
@@ -316,15 +339,17 @@
         [notification setFireDate:[NSDate dateWithTimeIntervalSinceNow:0]];
         [notification setTimeZone:[NSTimeZone defaultTimeZone]];
         [notification setSoundName:UILocalNotificationDefaultSoundName];
-        
-        // NSLog(@"THE NOTIFICATION IS %@", notification.description);
-        
+            
         //Set the notification on the application.
         [[UIApplication sharedApplication] setScheduledLocalNotifications:[NSArray arrayWithObject:notification]];
+        }
     }
     else if ([UIDevice currentDevice].batteryState == 3)
     {
         NSLog(@"Background charging state is now %ld meaning Battery Full", [UIDevice currentDevice].batteryState);
+        
+        if (self.inBackground == 1)
+        {
         //create and init notification
         UILocalNotification *notification = [[UILocalNotification alloc]init];
         [notification setCategory: @"ACCEPT_CATAGORY"];
@@ -333,11 +358,10 @@
         [notification setFireDate:[NSDate dateWithTimeIntervalSinceNow:0]];
         [notification setTimeZone:[NSTimeZone defaultTimeZone]];
         [notification setSoundName:UILocalNotificationDefaultSoundName];
-        
-        // NSLog(@"THE NOTIFICATION IS %@", notification.description);
-        
+            
         //Set the notification on the application.
         [[UIApplication sharedApplication] setScheduledLocalNotifications:[NSArray arrayWithObject:notification]];
+        }
     }
 }
 
