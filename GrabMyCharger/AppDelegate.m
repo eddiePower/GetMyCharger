@@ -331,7 +331,6 @@
             //set up an alert box for when user unplugs while in the app!!!!
         }
         
-        
     }
     else if ([UIDevice currentDevice].batteryState == 2)
     {
