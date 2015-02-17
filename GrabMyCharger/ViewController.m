@@ -40,11 +40,12 @@ int secondsLeft;
     {
         self.myDevice.batteryMonitoringEnabled = YES;
        
+        self.timerLabel.text = @"5:00";
         //set timer for 5Mins = 300
-        [self resetTimer: 10];
+        //[self resetTimer: 10];
         
         //call begin count down / timer.
-        [self countdownTimer];
+        //[self countdownTimer];
 
     }
     else
