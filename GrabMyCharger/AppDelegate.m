@@ -306,6 +306,8 @@
             //create and init notification of the local Type = not from server -> apple -> device.
             if (self.inBackground == 1)
             {
+                if (self.lastBatteryState != [UIDevice currentDevice].batteryState)
+                {
                UILocalNotification *notification = [[UILocalNotification alloc]init];
                [notification setCategory:@"ACCEPT_CATAGORY"];
                //set notification message, fireTime 0 seconds = now, using the device timeZone setting.
@@ -316,6 +318,12 @@
             
                //Set the notification on the application.
                [[UIApplication sharedApplication] setScheduledLocalNotifications:[NSArray arrayWithObject:notification]];
+                    //Update the stored last battery state to the current state preventing double notifications.
+                    self.lastBatteryState = [UIDevice currentDevice].batteryState;
+                    
+                    //spit out the new battery state in storage.
+                    NSLog(@"Stored Battery State is now %i", self.lastBatteryState);
+                }
             }
         }
         else  // alert user with app in the foreground.
@@ -331,17 +339,25 @@
         
         if (self.inBackground == 1)
         {
-        //create and init notification
-        UILocalNotification *notification = [[UILocalNotification alloc]init];
-        [notification setCategory: @"ACCEPT_CATAGORY"];
-        //set notification message, fireTime 0 seconds = now, using the device timeZone setting.
-        [notification setAlertBody:@"Background charging state is now 2 meaning Charging!"];
-        [notification setFireDate:[NSDate dateWithTimeIntervalSinceNow:0]];
-        [notification setTimeZone:[NSTimeZone defaultTimeZone]];
-        [notification setSoundName:UILocalNotificationDefaultSoundName];
+            if (self.lastBatteryState != [UIDevice currentDevice].batteryState)
+            {
+              //create and init notification
+               UILocalNotification *notification = [[UILocalNotification alloc]init];
+               [notification setCategory: @"ACCEPT_CATAGORY"];
+               //set notification message, fireTime 0 seconds = now, using the device timeZone setting.
+                [notification setAlertBody:@"Background charging state is now 2 meaning Charging!"];
+                [notification setFireDate:[NSDate dateWithTimeIntervalSinceNow:0]];
+                [notification setTimeZone:[NSTimeZone defaultTimeZone]];
+                [notification setSoundName:UILocalNotificationDefaultSoundName];
             
-        //Set the notification on the application.
-        [[UIApplication sharedApplication] setScheduledLocalNotifications:[NSArray arrayWithObject:notification]];
+                //Set the notification on the application.
+                [[UIApplication sharedApplication] setScheduledLocalNotifications:[NSArray arrayWithObject:notification]];
+                //Update the stored last battery state to the current state preventing double notifications.
+                self.lastBatteryState = [UIDevice currentDevice].batteryState;
+                
+                //spit out the new battery state in storage.
+                NSLog(@"Stored Battery State is now %i", self.lastBatteryState);
+            }
         }
     }
     else if ([UIDevice currentDevice].batteryState == 3)
@@ -350,19 +366,27 @@
         
         if (self.inBackground == 1)
         {
-        //create and init notification
-        UILocalNotification *notification = [[UILocalNotification alloc]init];
-        [notification setCategory: @"ACCEPT_CATAGORY"];
-        //set notification message, fireTime 0 seconds = now, using the device timeZone setting.
-        [notification setAlertBody:@"Background charging state is now 3 meaning Battery Full!"];
-        [notification setFireDate:[NSDate dateWithTimeIntervalSinceNow:0]];
-        [notification setTimeZone:[NSTimeZone defaultTimeZone]];
-        [notification setSoundName:UILocalNotificationDefaultSoundName];
+            if (self.lastBatteryState != [UIDevice currentDevice].batteryState)
+            {
+                //create and init notification
+                UILocalNotification *notification = [[UILocalNotification alloc]init];
+                [notification setCategory: @"ACCEPT_CATAGORY"];
+                //set notification message, fireTime 0 seconds = now, using the device timeZone setting.
+                [notification setAlertBody:@"Background charging state is now 3 meaning Battery Full!"];
+                [notification setFireDate:[NSDate dateWithTimeIntervalSinceNow:0]];
+                [notification setTimeZone:[NSTimeZone defaultTimeZone]];
+                [notification setSoundName:UILocalNotificationDefaultSoundName];
             
-        //Set the notification on the application.
-        [[UIApplication sharedApplication] setScheduledLocalNotifications:[NSArray arrayWithObject:notification]];
-        }
-    }
+                //Set the notification on the application.
+                [[UIApplication sharedApplication] setScheduledLocalNotifications:[NSArray arrayWithObject:notification]];
+                //Update the stored last battery state to the current state preventing double notifications.
+                self.lastBatteryState = [UIDevice currentDevice].batteryState;
+                
+                //spit out the new battery state in storage.
+                NSLog(@"Stored Battery State is now %i", self.lastBatteryState);
+            }//end if check on batterState stored value
+        }//end of if in background check
+    }//end of battery state check
 }
 
 @end

@@ -22,6 +22,8 @@
 @property(strong, nonatomic) CLLocationManager *locationManager;
 
 @property int inBackground;
+@property int lastBatteryState;
+
 
 @end
 
