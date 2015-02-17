@@ -7,18 +7,20 @@
 //
 
 #import <UIKit/UIKit.h>
+@import CoreLocation;
 
 @interface AppDelegate : UIResponder <UIApplicationDelegate>
 
 @property (strong, nonatomic) UIWindow *window;
 
-
+@property(strong, nonatomic) UIDevice *myDevice;
 @property (assign, nonatomic) UIBackgroundTaskIdentifier bgTask;
 
 @property (strong, nonatomic) dispatch_block_t expirationHandler;
 
 @property (strong, nonatomic) NSUserDefaults* userDefaults;
 
+@property(strong, nonatomic) CLLocationManager *locationManager;
 
 
 @end
