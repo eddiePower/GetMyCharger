@@ -13,7 +13,6 @@
 
 @property (strong, nonatomic) UIWindow *window;
 
-@property(strong, nonatomic) UIDevice *myDevice;
 @property (assign, nonatomic) UIBackgroundTaskIdentifier bgTask;
 
 @property (strong, nonatomic) dispatch_block_t expirationHandler;

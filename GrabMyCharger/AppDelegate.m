@@ -29,7 +29,6 @@
     
     //open space for the user defaults to be setup persestant during app run time.
     self.userDefaults = [[NSUserDefaults alloc] init];
-    self.myDevice = [[UIDevice alloc] init];
     
     //Create location manager for use globally through-out the application
     self.locationManager = [[CLLocationManager alloc] init];
@@ -81,9 +80,10 @@
         
         //Set a notification to tell us when the charger state has changed i.e: unplugged, charging, full.
         [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(batteryStateChanged:)
-                                                     name:UIDeviceBatteryStateDidChangeNotification object: self.myDevice];
+                                                     name:UIDeviceBatteryStateDidChangeNotification object: [UIDevice currentDevice]];
         
-        NSLog(@"Inside appDidEnterBackground and the allowed location change monitoring.\nLocation is now: %f, %f", self.locationManager.location.coordinate.latitude, self.locationManager.location.coordinate.longitude);
+        NSLog(@"Inside appDidEnterBackground and the allowed location change monitoring.\nLocation is now: %f, %f\nBatteryState is now: %li", self.locationManager.location.coordinate.latitude, self.locationManager.location.coordinate.longitude, [UIDevice currentDevice].batteryState);
+        
     }
     else
     {
@@ -135,7 +135,7 @@
     
     //Set a notification to tell us when the charger state has changed i.e: unplugged, charging, full.
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(batteryStateChanged:)
-                                                 name:UIDeviceBatteryStateDidChangeNotification object: self.myDevice];
+                                                 name:UIDeviceBatteryStateDidChangeNotification object: [UIDevice currentDevice]];
     
     
     //Alert the user if they switch apps and the charger is unpluged at time of app switch
@@ -198,7 +198,7 @@
 {
     NSLog(@"In the notification action reciever method notification sent was the %@", identifier);
     
-    NSLog(@"\nBatteryState is now: %ld\n", self.myDevice.batteryState);
+    NSLog(@"\nBatteryState is now: %ld\n", [UIDevice currentDevice].batteryState);
 
     completionHandler();
 }
@@ -237,7 +237,7 @@
 - (void)checkBattery
 {
 
-    NSString * levelLabel = [NSString stringWithFormat:@"%ld", self.myDevice.batteryState];
+    NSString * levelLabel = [NSString stringWithFormat:@"%ld", [UIDevice currentDevice].batteryState];
     NSLog(@"STATE %@", levelLabel);
     
 }
@@ -246,10 +246,10 @@
 - (void)batteryStateChanged:(NSNotification *)notification
 {
     //Debug info:
-    NSLog(@"The battery state has changed it is now %ld", self.myDevice.batteryState);
+    NSLog(@"The battery state has changed it is now %ld", [UIDevice currentDevice].batteryState);
     
     //Check the battery states to alert user when needed.
-    if (self.myDevice.batteryState == 1)
+    if ([UIDevice currentDevice].batteryState == 1)
     {
         NSLog(@"\nUnplugged!");
         //Work out what is needed for plugged in state??
@@ -266,18 +266,18 @@
         [[UIApplication sharedApplication] setScheduledLocalNotifications:[NSArray arrayWithObject:notification]];
         
     }
-    else if (self.myDevice.batteryState == 2)
+    else if ([UIDevice currentDevice].batteryState == 2)
     {
         NSLog(@"Charging!!");
         
         //ENTRY POINT for method calls to alert the user to take their charger with them.
         // May be do this via a notification if the app is not running!! needs more thinking time.
     }
-    else if(self.myDevice.batteryState == 3)
+    else if([UIDevice currentDevice].batteryState == 3)
     {
         NSLog(@"Battery Full!!!");
     }
-    else if(self.myDevice.batteryState == 0)
+    else if([UIDevice currentDevice].batteryState == 0)
     {
         NSLog(@"Prob simulator or a Error Charging.");
     }
