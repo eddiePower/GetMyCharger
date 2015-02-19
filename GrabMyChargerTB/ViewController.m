@@ -119,17 +119,21 @@
                                    // Reverse Geocoding
                                    CLGeocoder *geocoder = [[CLGeocoder alloc] init];
                                    
-                                   
+                                   //run the reverse geoCode or a lookup from gps(Long, Lat) CLLocation object and runs a async block on a webserver to find the street address which is returned as a array of CLPlacemark objects.
                                    [geocoder reverseGeocodeLocation:self.locationManager.location completionHandler:^(NSArray *placemarks, NSError *error)
                                     {
                                         //NSLog(@"Found placemarks: %@, error: %@", placemarks, error);
                                         
+                                        //if no errors and there are results
                                         if (error == nil && [placemarks count] > 0)
                                         {
+                                            //create temp array with the placemarks found
                                             NSMutableArray *tempArray = [[NSMutableArray alloc] initWithCapacity:[placemarks count]];
                                             
+                                            //for each placemark in our array
                                             for (CLPlacemark *placemark in placemarks)
                                             {
+                                                //add a string with address for each placemark found in our tempArray
                                                 [tempArray addObject:[NSString stringWithFormat:@"%@ %@ %@ %@ %@ %@",
                                                                       placemark.subThoroughfare, placemark.thoroughfare,
                                                                       placemark.locality, placemark.postalCode,
@@ -137,13 +141,13 @@
                                                                       placemark.country]];
                                             }
                                             
+                                            //copy and finish using our Mutable tempArray to our Array for adding to our view
                                             self.streetAddressArray = [tempArray copy];
                                             //Add the current location street address as a string to our Array
                                             [self.homeLocationsArray addObjectsFromArray: self.streetAddressArray];
                                             
                                             //add the new result to the table view when it is finished downloading
-                                            //!!!! THIS MAY BE A DRAIN ON APP MAY NEED TO RETHINK IF TAKES TOO LONG
-                                            // ALSO RELIES ON THE INTERNET CONNECTION MAY NEED A CHECK.
+                                            //!!!! Monitor time for random locations in the field!!!!
                                             [self.homeLocationsTblView reloadData];
                                         }
                                         else
@@ -153,7 +157,7 @@
                                         }
                                     }];
                                    
-                                   NSLog(@"Returning street address's of %@", self.streetAddressArray.description);
+                                   //NSLog(@"Returning street address's of %@", self.streetAddressArray.description);
                                }];
     
     //add actions to the new alertController.
