@@ -7,12 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		893A5DA71A958DBD000D7484 /* FrankstonLineStops.gpx in Resources */ = {isa = PBXBuildFile; fileRef = 893A5DA61A958DBD000D7484 /* FrankstonLineStops.gpx */; };
+		893A5DA91A95A4D4000D7484 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 893A5DA81A95A4D4000D7484 /* AVFoundation.framework */; };
+		893A5DC11A95B0F6000D7484 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 893A5DC01A95B0F6000D7484 /* Main.storyboard */; };
+		893A5DC31A95B111000D7484 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 893A5DC21A95B111000D7484 /* LaunchScreen.xib */; };
+		893A5DC51A95B11B000D7484 /* beepSound.wav in Resources */ = {isa = PBXBuildFile; fileRef = 893A5DC41A95B11B000D7484 /* beepSound.wav */; };
 		C12F1CEB1A9361C2007C4DA1 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C12F1CEA1A9361C2007C4DA1 /* main.m */; };
 		C12F1CEE1A9361C2007C4DA1 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C12F1CED1A9361C2007C4DA1 /* AppDelegate.m */; };
 		C12F1CF11A9361C2007C4DA1 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C12F1CF01A9361C2007C4DA1 /* ViewController.m */; };
-		C12F1CF41A9361C2007C4DA1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C12F1CF21A9361C2007C4DA1 /* Main.storyboard */; };
 		C12F1CF61A9361C2007C4DA1 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C12F1CF51A9361C2007C4DA1 /* Images.xcassets */; };
-		C12F1CF91A9361C2007C4DA1 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = C12F1CF71A9361C2007C4DA1 /* LaunchScreen.xib */; };
 		C12F1D051A9361C2007C4DA1 /* GrabMyChargerTBTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C12F1D041A9361C2007C4DA1 /* GrabMyChargerTBTests.m */; };
 		C12F1D0F1A93678F007C4DA1 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C12F1D0E1A93678F007C4DA1 /* CoreLocation.framework */; };
 		C12F1D111A936795007C4DA1 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C12F1D101A936795007C4DA1 /* UIKit.framework */; };
@@ -29,6 +32,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		893A5DA61A958DBD000D7484 /* FrankstonLineStops.gpx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = FrankstonLineStops.gpx; sourceTree = "<group>"; };
+		893A5DA81A95A4D4000D7484 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		893A5DC01A95B0F6000D7484 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		893A5DC21A95B111000D7484 /* LaunchScreen.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LaunchScreen.xib; sourceTree = "<group>"; };
+		893A5DC41A95B11B000D7484 /* beepSound.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = beepSound.wav; sourceTree = "<group>"; };
 		C12F1CE51A9361C2007C4DA1 /* GrabMyChargerTB.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GrabMyChargerTB.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C12F1CE91A9361C2007C4DA1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C12F1CEA1A9361C2007C4DA1 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -36,9 +44,7 @@
 		C12F1CED1A9361C2007C4DA1 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		C12F1CEF1A9361C2007C4DA1 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		C12F1CF01A9361C2007C4DA1 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		C12F1CF31A9361C2007C4DA1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C12F1CF51A9361C2007C4DA1 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		C12F1CF81A9361C2007C4DA1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		C12F1CFE1A9361C2007C4DA1 /* GrabMyChargerTBTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GrabMyChargerTBTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C12F1D031A9361C2007C4DA1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C12F1D041A9361C2007C4DA1 /* GrabMyChargerTBTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GrabMyChargerTBTests.m; sourceTree = "<group>"; };
@@ -51,6 +57,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				893A5DA91A95A4D4000D7484 /* AVFoundation.framework in Frameworks */,
 				C12F1D111A936795007C4DA1 /* UIKit.framework in Frameworks */,
 				C12F1D0F1A93678F007C4DA1 /* CoreLocation.framework in Frameworks */,
 			);
@@ -66,13 +73,31 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		893A5DC61A95B160000D7484 /* extras */ = {
+			isa = PBXGroup;
+			children = (
+				893A5DC41A95B11B000D7484 /* beepSound.wav */,
+			);
+			name = extras;
+			sourceTree = "<group>";
+		};
+		89D4D8841A948DDB00FFB982 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				893A5DA81A95A4D4000D7484 /* AVFoundation.framework */,
+				C12F1D101A936795007C4DA1 /* UIKit.framework */,
+				C12F1D0E1A93678F007C4DA1 /* CoreLocation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		C12F1CDC1A9361C2007C4DA1 = {
 			isa = PBXGroup;
 			children = (
-				C12F1D101A936795007C4DA1 /* UIKit.framework */,
-				C12F1D0E1A93678F007C4DA1 /* CoreLocation.framework */,
+				893A5DA61A958DBD000D7484 /* FrankstonLineStops.gpx */,
 				C12F1CE71A9361C2007C4DA1 /* GrabMyChargerTB */,
 				C12F1D011A9361C2007C4DA1 /* GrabMyChargerTBTests */,
+				89D4D8841A948DDB00FFB982 /* Frameworks */,
 				C12F1CE61A9361C2007C4DA1 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -93,9 +118,10 @@
 				C12F1CED1A9361C2007C4DA1 /* AppDelegate.m */,
 				C12F1CEF1A9361C2007C4DA1 /* ViewController.h */,
 				C12F1CF01A9361C2007C4DA1 /* ViewController.m */,
-				C12F1CF21A9361C2007C4DA1 /* Main.storyboard */,
+				893A5DC01A95B0F6000D7484 /* Main.storyboard */,
+				893A5DC21A95B111000D7484 /* LaunchScreen.xib */,
 				C12F1CF51A9361C2007C4DA1 /* Images.xcassets */,
-				C12F1CF71A9361C2007C4DA1 /* LaunchScreen.xib */,
+				893A5DC61A95B160000D7484 /* extras */,
 				C12F1CE81A9361C2007C4DA1 /* Supporting Files */,
 			);
 			path = GrabMyChargerTB;
@@ -176,6 +202,7 @@
 				TargetAttributes = {
 					C12F1CE41A9361C2007C4DA1 = {
 						CreatedOnToolsVersion = 6.1.1;
+						DevelopmentTeam = 56MDF7DRJL;
 						SystemCapabilities = {
 							com.apple.BackgroundModes = {
 								enabled = 1;
@@ -212,8 +239,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C12F1CF41A9361C2007C4DA1 /* Main.storyboard in Resources */,
-				C12F1CF91A9361C2007C4DA1 /* LaunchScreen.xib in Resources */,
+				893A5DC31A95B111000D7484 /* LaunchScreen.xib in Resources */,
+				893A5DC11A95B0F6000D7484 /* Main.storyboard in Resources */,
+				893A5DA71A958DBD000D7484 /* FrankstonLineStops.gpx in Resources */,
+				893A5DC51A95B11B000D7484 /* beepSound.wav in Resources */,
 				C12F1CF61A9361C2007C4DA1 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -255,25 +284,6 @@
 			targetProxy = C12F1CFF1A9361C2007C4DA1 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
-
-/* Begin PBXVariantGroup section */
-		C12F1CF21A9361C2007C4DA1 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				C12F1CF31A9361C2007C4DA1 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		C12F1CF71A9361C2007C4DA1 /* LaunchScreen.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				C12F1CF81A9361C2007C4DA1 /* Base */,
-			);
-			name = LaunchScreen.xib;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		C12F1D061A9361C2007C4DA1 /* Debug */ = {
@@ -356,6 +366,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = GrabMyChargerTB/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -366,6 +377,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = GrabMyChargerTB/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -425,6 +437,7 @@
 				C12F1D0A1A9361C2007C4DA1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C12F1D0B1A9361C2007C4DA1 /* Build configuration list for PBXNativeTarget "GrabMyChargerTBTests" */ = {
 			isa = XCConfigurationList;
@@ -433,6 +446,7 @@
 				C12F1D0D1A9361C2007C4DA1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

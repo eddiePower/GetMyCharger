@@ -1,0 +1,1866 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<gpx
+    xmlns="http://www.topografix.com/GPX/1/1"
+    xmlns:gpxx = "http://www.garmin.com/xmlschemas/GpxExtensions/v3"
+    xmlns:xsi = "http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.topografix.com/GPX/1/1 http://www.topografix.com/GPX/1/1/gpx.xsd
+    http://www.garmin.com/xmlschemas/GpxExtensions/v3
+    http://www8.garmin.com/xmlschemas/GpxExtensions/v3/GpxExtensionsv3.xsd"
+    version="1.1"
+    creator="gpx-poi.com">
+	<wpt lat="-38.156428" lon="145.125932">
+        <time>2014-04-30T13:29:34Z</time>
+        <name>Starting point</name>
+        <desc>Starting point in frankston</desc>
+        <extensions>
+            <gpxx:WaypointExtension>
+                <gpxx:Proximity>1</gpxx:Proximity>
+                <gpxx:Address>
+                    <gpxx:StreetAddress>Young Street, Frankston VIC 3199, Australia</gpxx:StreetAddress>
+                    <gpxx:City>Frankston</gpxx:City>
+                    <gpxx:State>VIC</gpxx:State>
+                    <gpxx:Country>AU</gpxx:Country>
+                    <gpxx:PostalCode>3199</gpxx:PostalCode>
+                </gpxx:Address>
+            </gpxx:WaypointExtension>
+        </extensions>
+    </wpt>
+    <wpt lat="-38.156428" lon="145.125932">
+        <time>2014-04-30T13:29:34Z</time>
+        <name>Starting point</name>
+        <desc>Starting point in frankston</desc>
+        <extensions>
+            <gpxx:WaypointExtension>
+                <gpxx:Proximity>1</gpxx:Proximity>
+                <gpxx:Address>
+                    <gpxx:StreetAddress>Young Street, Frankston VIC 3199, Australia</gpxx:StreetAddress>
+                    <gpxx:City>Frankston</gpxx:City>
+                    <gpxx:State>VIC</gpxx:State>
+                    <gpxx:Country>AU</gpxx:Country>
+                    <gpxx:PostalCode>3199</gpxx:PostalCode>
+                </gpxx:Address>
+            </gpxx:WaypointExtension>
+        </extensions>
+    </wpt>
+    <wpt lat="-38.156428" lon="145.125932">
+        <time>2014-04-30T13:29:34Z</time>
+        <name>Starting point</name>
+        <desc>Starting point in frankston</desc>
+        <extensions>
+            <gpxx:WaypointExtension>
+                <gpxx:Proximity>1</gpxx:Proximity>
+                <gpxx:Address>
+                    <gpxx:StreetAddress>Young Street, Frankston VIC 3199, Australia</gpxx:StreetAddress>
+                    <gpxx:City>Frankston</gpxx:City>
+                    <gpxx:State>VIC</gpxx:State>
+                    <gpxx:Country>AU</gpxx:Country>
+                    <gpxx:PostalCode>3199</gpxx:PostalCode>
+                </gpxx:Address>
+            </gpxx:WaypointExtension>
+        </extensions>
+    </wpt>
+    <wpt lat="-38.156428" lon="145.125932">
+        <time>2014-04-30T13:29:34Z</time>
+        <name>Starting point</name>
+        <desc>Starting point in frankston</desc>
+        <extensions>
+            <gpxx:WaypointExtension>
+                <gpxx:Proximity>1</gpxx:Proximity>
+                <gpxx:Address>
+                    <gpxx:StreetAddress>Young Street, Frankston VIC 3199, Australia</gpxx:StreetAddress>
+                    <gpxx:City>Frankston</gpxx:City>
+                    <gpxx:State>VIC</gpxx:State>
+                    <gpxx:Country>AU</gpxx:Country>
+                    <gpxx:PostalCode>3199</gpxx:PostalCode>
+                </gpxx:Address>
+            </gpxx:WaypointExtension>
+        </extensions>
+    </wpt>
+    <wpt lat="-38.143429" lon="145.125932">
+        <time>2014-04-30T13:29:34Z</time>
+        <name>Frankston Station</name>
+        <desc>Frankston Train Station</desc>
+        <extensions>
+            <gpxx:WaypointExtension>
+                <gpxx:Proximity>1</gpxx:Proximity>
+                <gpxx:Address>
+                    <gpxx:StreetAddress>Young Street, Frankston VIC 3199, Australia</gpxx:StreetAddress>
+                    <gpxx:City>Frankston</gpxx:City>
+                    <gpxx:State>VIC</gpxx:State>
+                    <gpxx:Country>AU</gpxx:Country>
+                    <gpxx:PostalCode>3199</gpxx:PostalCode>
+                </gpxx:Address>
+            </gpxx:WaypointExtension>
+        </extensions>
+    </wpt>
+    <wpt lat="-38.143429" lon="145.125932">
+        <time>2014-04-30T13:29:34Z</time>
+        <name>Frankston Station</name>
+        <desc>Frankston Train Station</desc>
+        <extensions>
+            <gpxx:WaypointExtension>
+                <gpxx:Proximity>1</gpxx:Proximity>
+                <gpxx:Address>
+                    <gpxx:StreetAddress>Young Street, Frankston VIC 3199, Australia</gpxx:StreetAddress>
+                    <gpxx:City>Frankston</gpxx:City>
+                    <gpxx:State>VIC</gpxx:State>
+                    <gpxx:Country>AU</gpxx:Country>
+                    <gpxx:PostalCode>3199</gpxx:PostalCode>
+                </gpxx:Address>
+            </gpxx:WaypointExtension>
+        </extensions>
+    </wpt>
+    <wpt lat="-38.143429" lon="145.125932">
+        <time>2014-04-30T13:29:34Z</time>
+        <name>Frankston Station</name>
+        <desc>Frankston Train Station</desc>
+        <extensions>
+            <gpxx:WaypointExtension>
+                <gpxx:Proximity>1</gpxx:Proximity>
+                <gpxx:Address>
+                    <gpxx:StreetAddress>Young Street, Frankston VIC 3199, Australia</gpxx:StreetAddress>
+                    <gpxx:City>Frankston</gpxx:City>
+                    <gpxx:State>VIC</gpxx:State>
+                    <gpxx:Country>AU</gpxx:Country>
+                    <gpxx:PostalCode>3199</gpxx:PostalCode>
+                </gpxx:Address>
+            </gpxx:WaypointExtension>
+        </extensions>
+    </wpt>
+    <wpt lat="-38.143429" lon="145.125932">
+        <time>2014-04-30T13:29:34Z</time>
+        <name>Frankston Station</name>
+        <desc>Frankston Train Station</desc>
+        <extensions>
+            <gpxx:WaypointExtension>
+                <gpxx:Proximity>1</gpxx:Proximity>
+                <gpxx:Address>
+                    <gpxx:StreetAddress>Young Street, Frankston VIC 3199, Australia</gpxx:StreetAddress>
+                    <gpxx:City>Frankston</gpxx:City>
+                    <gpxx:State>VIC</gpxx:State>
+                    <gpxx:Country>AU</gpxx:Country>
+                    <gpxx:PostalCode>3199</gpxx:PostalCode>
+                </gpxx:Address>
+            </gpxx:WaypointExtension>
+        </extensions>
+    </wpt>
+    <wpt lat="-38.143429" lon="145.125932">
+        <time>2014-04-30T13:29:34Z</time>
+        <name>Frankston Station</name>
+        <desc>Frankston Train Station</desc>
+        <extensions>
+            <gpxx:WaypointExtension>
+                <gpxx:Proximity>1</gpxx:Proximity>
+                <gpxx:Address>
+                    <gpxx:StreetAddress>Young Street, Frankston VIC 3199, Australia</gpxx:StreetAddress>
+                    <gpxx:City>Frankston</gpxx:City>
+                    <gpxx:State>VIC</gpxx:State>
+                    <gpxx:Country>AU</gpxx:Country>
+                    <gpxx:PostalCode>3199</gpxx:PostalCode>
+                </gpxx:Address>
+            </gpxx:WaypointExtension>
+        </extensions>
+    </wpt>
+    <wpt lat="-38.120746" lon="145.135771">
+        <time>2014-04-30T13:29:19Z</time>
+        <name>Kananook Station</name>
+        <desc>Kananook Train Station</desc>
+        <extensions>
+            <gpxx:WaypointExtension>
+                <gpxx:Proximity>1</gpxx:Proximity>
+                <gpxx:Address>
+                    <gpxx:StreetAddress>Wells Road, Frankston VIC 3199, Australia</gpxx:StreetAddress>
+                    <gpxx:City>Frankston</gpxx:City>
+                    <gpxx:State>VIC</gpxx:State>
+                    <gpxx:Country>AU</gpxx:Country>
+                    <gpxx:PostalCode>3199</gpxx:PostalCode>
+                </gpxx:Address>
+            </gpxx:WaypointExtension>
+        </extensions>
+    </wpt>
+    <wpt lat="-38.120746" lon="145.135771">
+        <time>2014-04-30T13:29:19Z</time>
+        <name>Kananook Station</name>
+        <desc>Kananook Train Station</desc>
+        <extensions>
+            <gpxx:WaypointExtension>
+                <gpxx:Proximity>1</gpxx:Proximity>
+                <gpxx:Address>
+                    <gpxx:StreetAddress>Wells Road, Frankston VIC 3199, Australia</gpxx:StreetAddress>
+                    <gpxx:City>Frankston</gpxx:City>
+                    <gpxx:State>VIC</gpxx:State>
+                    <gpxx:Country>AU</gpxx:Country>
+                    <gpxx:PostalCode>3199</gpxx:PostalCode>
+                </gpxx:Address>
+            </gpxx:WaypointExtension>
+        </extensions>
+    </wpt>
+    <wpt lat="-38.120746" lon="145.135771">
+        <time>2014-04-30T13:29:19Z</time>
+        <name>Kananook Station</name>
+        <desc>Kananook Train Station</desc>
+        <extensions>
+            <gpxx:WaypointExtension>
+                <gpxx:Proximity>1</gpxx:Proximity>
+                <gpxx:Address>
+                    <gpxx:StreetAddress>Wells Road, Frankston VIC 3199, Australia</gpxx:StreetAddress>
+                    <gpxx:City>Frankston</gpxx:City>
+                    <gpxx:State>VIC</gpxx:State>
+                    <gpxx:Country>AU</gpxx:Country>
+                    <gpxx:PostalCode>3199</gpxx:PostalCode>
+                </gpxx:Address>
+            </gpxx:WaypointExtension>
+        </extensions>
+    </wpt>
+    <wpt lat="-38.120746" lon="145.135771">
+        <time>2014-04-30T13:29:19Z</time>
+        <name>Kananook Station</name>
+        <desc>Kananook Train Station</desc>
+        <extensions>
+            <gpxx:WaypointExtension>
+                <gpxx:Proximity>1</gpxx:Proximity>
+                <gpxx:Address>
+                    <gpxx:StreetAddress>Wells Road, Frankston VIC 3199, Australia</gpxx:StreetAddress>
+                    <gpxx:City>Frankston</gpxx:City>
+                    <gpxx:State>VIC</gpxx:State>
+                    <gpxx:Country>AU</gpxx:Country>
+                    <gpxx:PostalCode>3199</gpxx:PostalCode>
+                </gpxx:Address>
+            </gpxx:WaypointExtension>
+        </extensions>
+    </wpt>
+    <wpt lat="-38.120746" lon="145.135771">
+        <time>2014-04-30T13:29:19Z</time>
+        <name>Kananook Station</name>
+        <desc>Kananook Train Station</desc>
+        <extensions>
+            <gpxx:WaypointExtension>
+                <gpxx:Proximity>1</gpxx:Proximity>
+                <gpxx:Address>
+                    <gpxx:StreetAddress>Wells Road, Frankston VIC 3199, Australia</gpxx:StreetAddress>
+                    <gpxx:City>Frankston</gpxx:City>
+                    <gpxx:State>VIC</gpxx:State>
+                    <gpxx:Country>AU</gpxx:Country>
+                    <gpxx:PostalCode>3199</gpxx:PostalCode>
+                </gpxx:Address>
+            </gpxx:WaypointExtension>
+        </extensions>
+    </wpt>
+    <wpt lat="-38.120746" lon="145.135771">
+        <time>2014-04-30T13:29:19Z</time>
+        <name>Kananook Station</name>
+        <desc>Kananook Train Station</desc>
+        <extensions>
+            <gpxx:WaypointExtension>
+                <gpxx:Proximity>1</gpxx:Proximity>
+                <gpxx:Address>
+                    <gpxx:StreetAddress>Wells Road, Frankston VIC 3199, Australia</gpxx:StreetAddress>
+                    <gpxx:City>Frankston</gpxx:City>
+                    <gpxx:State>VIC</gpxx:State>
+                    <gpxx:Country>AU</gpxx:Country>
+                    <gpxx:PostalCode>3199</gpxx:PostalCode>
+                </gpxx:Address>
+            </gpxx:WaypointExtension>
+        </extensions>
+    </wpt>
+    <wpt lat="-38.104119" lon="145.128163">
+        <time>2014-04-30T13:29:19Z</time>
+        <name>Seaford Station</name>
+        <desc>Seaford Train Station</desc>
+        <extensions>
+            <gpxx:WaypointExtension>
+                <gpxx:Proximity>1</gpxx:Proximity>
+                <gpxx:Address>
+                    <gpxx:StreetAddress>45 Railway Parade, Seaford VIC 3198, Australia</gpxx:StreetAddress>
+                    <gpxx:City>Seaford</gpxx:City>
+                    <gpxx:State>VIC</gpxx:State>
+                    <gpxx:Country>AU</gpxx:Country>
+                    <gpxx:PostalCode>3198</gpxx:PostalCode>
+                </gpxx:Address>
+            </gpxx:WaypointExtension>
+        </extensions>
+    </wpt>
+    <wpt lat="-38.104119" lon="145.128163">
+        <time>2014-04-30T13:29:19Z</time>
+        <name>Seaford Station</name>
+        <desc>Seaford Train Station</desc>
+        <extensions>
+            <gpxx:WaypointExtension>
+                <gpxx:Proximity>1</gpxx:Proximity>
+                <gpxx:Address>
+                    <gpxx:StreetAddress>45 Railway Parade, Seaford VIC 3198, Australia</gpxx:StreetAddress>
+                    <gpxx:City>Seaford</gpxx:City>
+                    <gpxx:State>VIC</gpxx:State>
+                    <gpxx:Country>AU</gpxx:Country>
+                    <gpxx:PostalCode>3198</gpxx:PostalCode>
+                </gpxx:Address>
+            </gpxx:WaypointExtension>
+        </extensions>
+    </wpt>
+    <wpt lat="-38.104119" lon="145.128163">
+        <time>2014-04-30T13:29:19Z</time>
+        <name>Seaford Station</name>
+        <desc>Seaford Train Station</desc>
+        <extensions>
+            <gpxx:WaypointExtension>
+                <gpxx:Proximity>1</gpxx:Proximity>
+                <gpxx:Address>
+                    <gpxx:StreetAddress>45 Railway Parade, Seaford VIC 3198, Australia</gpxx:StreetAddress>
+                    <gpxx:City>Seaford</gpxx:City>
+                    <gpxx:State>VIC</gpxx:State>
+                    <gpxx:Country>AU</gpxx:Country>
+                    <gpxx:PostalCode>3198</gpxx:PostalCode>
+                </gpxx:Address>
+            </gpxx:WaypointExtension>
+        </extensions>
+    </wpt>
+    <wpt lat="-38.104119" lon="145.128163">
+        <time>2014-04-30T13:29:19Z</time>
+        <name>Seaford Station</name>
+        <desc>Seaford Train Station</desc>
+        <extensions>
+            <gpxx:WaypointExtension>
+                <gpxx:Proximity>1</gpxx:Proximity>
+                <gpxx:Address>
+                    <gpxx:StreetAddress>45 Railway Parade, Seaford VIC 3198, Australia</gpxx:StreetAddress>
+                    <gpxx:City>Seaford</gpxx:City>
+                    <gpxx:State>VIC</gpxx:State>
+                    <gpxx:Country>AU</gpxx:Country>
+                    <gpxx:PostalCode>3198</gpxx:PostalCode>
+                </gpxx:Address>
+            </gpxx:WaypointExtension>
+        </extensions>
+    </wpt>
+    <wpt lat="-38.104119" lon="145.128163">
+        <time>2014-04-30T13:29:19Z</time>
+        <name>Seaford Station</name>
+        <desc>Seaford Train Station</desc>
+        <extensions>
+            <gpxx:WaypointExtension>
+                <gpxx:Proximity>1</gpxx:Proximity>
+                <gpxx:Address>
+                    <gpxx:StreetAddress>45 Railway Parade, Seaford VIC 3198, Australia</gpxx:StreetAddress>
+                    <gpxx:City>Seaford</gpxx:City>
+                    <gpxx:State>VIC</gpxx:State>
+                    <gpxx:Country>AU</gpxx:Country>
+                    <gpxx:PostalCode>3198</gpxx:PostalCode>
+                </gpxx:Address>
+            </gpxx:WaypointExtension>
+        </extensions>
+    </wpt>
+    <wpt lat="-38.104119" lon="145.128163">
+        <time>2014-04-30T13:29:19Z</time>
+        <name>Seaford Station</name>
+        <desc>Seaford Train Station</desc>
+        <extensions>
+            <gpxx:WaypointExtension>
+                <gpxx:Proximity>1</gpxx:Proximity>
+                <gpxx:Address>
+                    <gpxx:StreetAddress>45 Railway Parade, Seaford VIC 3198, Australia</gpxx:StreetAddress>
+                    <gpxx:City>Seaford</gpxx:City>
+                    <gpxx:State>VIC</gpxx:State>
+                    <gpxx:Country>AU</gpxx:Country>
+                    <gpxx:PostalCode>3198</gpxx:PostalCode>
+                </gpxx:Address>
+            </gpxx:WaypointExtension>
+        </extensions>
+    </wpt>
+    <wpt lat="-38.075575" lon="145.122556">
+        <time>2014-04-30T13:29:19Z</time>
+        <name>Carrum Station</name>
+        <desc>Carrum Train Station</desc>
+        <extensions>
+            <gpxx:WaypointExtension>
+                <gpxx:Proximity>1</gpxx:Proximity>
+                <gpxx:Address>
+                    <gpxx:StreetAddress>Nepean Highway, Carrum VIC 3197, Australia</gpxx:StreetAddress>
+                    <gpxx:City>Carrum</gpxx:City>
+                    <gpxx:State>VIC</gpxx:State>
+                    <gpxx:Country>AU</gpxx:Country>
+                    <gpxx:PostalCode>3197</gpxx:PostalCode>
+                </gpxx:Address>
+            </gpxx:WaypointExtension>
+        </extensions>
+    </wpt>
+    <wpt lat="-38.075575" lon="145.122556">
+        <time>2014-04-30T13:29:19Z</time>
+        <name>Carrum Station</name>
+        <desc>Carrum Train Station</desc>
+        <extensions>
+            <gpxx:WaypointExtension>
+                <gpxx:Proximity>1</gpxx:Proximity>
+                <gpxx:Address>
+                    <gpxx:StreetAddress>Nepean Highway, Carrum VIC 3197, Australia</gpxx:StreetAddress>
+                    <gpxx:City>Carrum</gpxx:City>
+                    <gpxx:State>VIC</gpxx:State>
+                    <gpxx:Country>AU</gpxx:Country>
+                    <gpxx:PostalCode>3197</gpxx:PostalCode>
+                </gpxx:Address>
+            </gpxx:WaypointExtension>
+        </extensions>
+    </wpt>
+    <wpt lat="-38.075575" lon="145.122556">
+        <time>2014-04-30T13:29:19Z</time>
+        <name>Carrum Station</name>
+        <desc>Carrum Train Station</desc>
+        <extensions>
+            <gpxx:WaypointExtension>
+                <gpxx:Proximity>1</gpxx:Proximity>
+                <gpxx:Address>
+                    <gpxx:StreetAddress>Nepean Highway, Carrum VIC 3197, Australia</gpxx:StreetAddress>
+                    <gpxx:City>Carrum</gpxx:City>
+                    <gpxx:State>VIC</gpxx:State>
+                    <gpxx:Country>AU</gpxx:Country>
+                    <gpxx:PostalCode>3197</gpxx:PostalCode>
+                </gpxx:Address>
+            </gpxx:WaypointExtension>
+        </extensions>
+    </wpt>
+    <wpt lat="-38.075575" lon="145.122556">
+        <time>2014-04-30T13:29:19Z</time>
+        <name>Carrum Station</name>
+        <desc>Carrum Train Station</desc>
+        <extensions>
+            <gpxx:WaypointExtension>
+                <gpxx:Proximity>1</gpxx:Proximity>
+                <gpxx:Address>
+                    <gpxx:StreetAddress>Nepean Highway, Carrum VIC 3197, Australia</gpxx:StreetAddress>
+                    <gpxx:City>Carrum</gpxx:City>
+                    <gpxx:State>VIC</gpxx:State>
+                    <gpxx:Country>AU</gpxx:Country>
+                    <gpxx:PostalCode>3197</gpxx:PostalCode>
+                </gpxx:Address>
+            </gpxx:WaypointExtension>
+        </extensions>
+    </wpt>
+    <wpt lat="-38.075575" lon="145.122556">
+        <time>2014-04-30T13:29:19Z</time>
+        <name>Carrum Station</name>
+        <desc>Carrum Train Station</desc>
+        <extensions>
+            <gpxx:WaypointExtension>
+                <gpxx:Proximity>1</gpxx:Proximity>
+                <gpxx:Address>
+                    <gpxx:StreetAddress>Nepean Highway, Carrum VIC 3197, Australia</gpxx:StreetAddress>
+                    <gpxx:City>Carrum</gpxx:City>
+                    <gpxx:State>VIC</gpxx:State>
+                    <gpxx:Country>AU</gpxx:Country>
+                    <gpxx:PostalCode>3197</gpxx:PostalCode>
+                </gpxx:Address>
+            </gpxx:WaypointExtension>
+        </extensions>
+    </wpt>
+    <wpt lat="-38.075575" lon="145.122556">
+        <time>2014-04-30T13:29:19Z</time>
+        <name>Carrum Station</name>
+        <desc>Carrum Train Station</desc>
+        <extensions>
+            <gpxx:WaypointExtension>
+                <gpxx:Proximity>1</gpxx:Proximity>
+                <gpxx:Address>
+                    <gpxx:StreetAddress>Nepean Highway, Carrum VIC 3197, Australia</gpxx:StreetAddress>
+                    <gpxx:City>Carrum</gpxx:City>
+                    <gpxx:State>VIC</gpxx:State>
+                    <gpxx:Country>AU</gpxx:Country>
+                    <gpxx:PostalCode>3197</gpxx:PostalCode>
+                </gpxx:Address>
+            </gpxx:WaypointExtension>
+        </extensions>
+    </wpt>
+    <wpt lat="-38.062821" lon="145.119766">
+        <time>2014-04-30T13:29:19Z</time>
+        <name>Bonbeach Station</name>
+        <desc>Bonbeach Train Station</desc>
+        <extensions>
+            <gpxx:WaypointExtension>
+                <gpxx:Proximity>1</gpxx:Proximity>
+                <gpxx:Address>
+                    <gpxx:StreetAddress>Nepean Highway, Bonbeach VIC 3196, Australia</gpxx:StreetAddress>
+                    <gpxx:City>Bonbeach</gpxx:City>
+                    <gpxx:State>VIC</gpxx:State>
+                    <gpxx:Country>AU</gpxx:Country>
+                    <gpxx:PostalCode>3196</gpxx:PostalCode>
+                </gpxx:Address>
+            </gpxx:WaypointExtension>
+        </extensions>
+    </wpt>
+    <wpt lat="-38.062821" lon="145.119766">
+        <time>2014-04-30T13:29:19Z</time>
+        <name>Bonbeach Station</name>
+        <desc>Bonbeach Train Station</desc>
+        <extensions>
+            <gpxx:WaypointExtension>
+                <gpxx:Proximity>1</gpxx:Proximity>
+                <gpxx:Address>
+                    <gpxx:StreetAddress>Nepean Highway, Bonbeach VIC 3196, Australia</gpxx:StreetAddress>
+                    <gpxx:City>Bonbeach</gpxx:City>
+                    <gpxx:State>VIC</gpxx:State>
+                    <gpxx:Country>AU</gpxx:Country>
+                    <gpxx:PostalCode>3196</gpxx:PostalCode>
+                </gpxx:Address>
+            </gpxx:WaypointExtension>
+        </extensions>
+    </wpt>
+    <wpt lat="-38.062821" lon="145.119766">
+        <time>2014-04-30T13:29:19Z</time>
+        <name>Bonbeach Station</name>
+        <desc>Bonbeach Train Station</desc>
+        <extensions>
+            <gpxx:WaypointExtension>
+                <gpxx:Proximity>1</gpxx:Proximity>
+                <gpxx:Address>
+                    <gpxx:StreetAddress>Nepean Highway, Bonbeach VIC 3196, Australia</gpxx:StreetAddress>
+                    <gpxx:City>Bonbeach</gpxx:City>
+                    <gpxx:State>VIC</gpxx:State>
+                    <gpxx:Country>AU</gpxx:Country>
+                    <gpxx:PostalCode>3196</gpxx:PostalCode>
+                </gpxx:Address>
+            </gpxx:WaypointExtension>
+        </extensions>
+    </wpt>
+    <wpt lat="-38.062821" lon="145.119766">
+        <time>2014-04-30T13:29:19Z</time>
+        <name>Bonbeach Station</name>
+        <desc>Bonbeach Train Station</desc>
+        <extensions>
+            <gpxx:WaypointExtension>
+                <gpxx:Proximity>1</gpxx:Proximity>
+                <gpxx:Address>
+                    <gpxx:StreetAddress>Nepean Highway, Bonbeach VIC 3196, Australia</gpxx:StreetAddress>
+                    <gpxx:City>Bonbeach</gpxx:City>
+                    <gpxx:State>VIC</gpxx:State>
+                    <gpxx:Country>AU</gpxx:Country>
+                    <gpxx:PostalCode>3196</gpxx:PostalCode>
+                </gpxx:Address>
+            </gpxx:WaypointExtension>
+        </extensions>
+    </wpt>
+    <wpt lat="-38.062821" lon="145.119766">
+        <time>2014-04-30T13:29:19Z</time>
+        <name>Bonbeach Station</name>
+        <desc>Bonbeach Train Station</desc>
+        <extensions>
+            <gpxx:WaypointExtension>
+                <gpxx:Proximity>1</gpxx:Proximity>
+                <gpxx:Address>
+                    <gpxx:StreetAddress>Nepean Highway, Bonbeach VIC 3196, Australia</gpxx:StreetAddress>
+                    <gpxx:City>Bonbeach</gpxx:City>
+                    <gpxx:State>VIC</gpxx:State>
+                    <gpxx:Country>AU</gpxx:Country>
+                    <gpxx:PostalCode>3196</gpxx:PostalCode>
+                </gpxx:Address>
+            </gpxx:WaypointExtension>
+        </extensions>
+    </wpt>
+    <wpt lat="-38.062821" lon="145.119766">
+        <time>2014-04-30T13:29:19Z</time>
+        <name>Bonbeach Station</name>
+        <desc>Bonbeach Train Station</desc>
+        <extensions>
+            <gpxx:WaypointExtension>
+                <gpxx:Proximity>1</gpxx:Proximity>
+                <gpxx:Address>
+                    <gpxx:StreetAddress>Nepean Highway, Bonbeach VIC 3196, Australia</gpxx:StreetAddress>
+                    <gpxx:City>Bonbeach</gpxx:City>
+                    <gpxx:State>VIC</gpxx:State>
+                    <gpxx:Country>AU</gpxx:Country>
+                    <gpxx:PostalCode>3196</gpxx:PostalCode>
+                </gpxx:Address>
+            </gpxx:WaypointExtension>
+        </extensions>
+    </wpt>
+    <wpt lat="-38.052220" lon="145.116133">
+        <time>2014-04-30T13:29:19Z</time>
+        <name>Chelsea Station</name>
+        <desc>Chelsea Train Station</desc>
+        <extensions>
+            <gpxx:WaypointExtension>
+                <gpxx:Proximity>1</gpxx:Proximity>
+                <gpxx:Address>
+                    <gpxx:StreetAddress>404–406 Nepean Highway Chelsea VIC 3196</gpxx:StreetAddress>
+                    <gpxx:City>Chelsea</gpxx:City>
+                    <gpxx:State>VIC</gpxx:State>
+                    <gpxx:Country>AU</gpxx:Country>
+                    <gpxx:PostalCode>3196</gpxx:PostalCode>
+                </gpxx:Address>
+            </gpxx:WaypointExtension>
+        </extensions>
+    </wpt>
+    <wpt lat="-38.038307" lon="145.1086177">
+        <time>2014-04-30T13:29:19Z</time>
+        <name>Edithvale Station</name>
+        <desc>Edithvale Train Station</desc>
+        <extensions>
+            <gpxx:WaypointExtension>
+                <gpxx:Proximity>1</gpxx:Proximity>
+                <gpxx:Address>
+                    <gpxx:StreetAddress>Nepean Highway Edithvale VIC 3196</gpxx:StreetAddress>
+                    <gpxx:City>Edithvale</gpxx:City>
+                    <gpxx:State>VIC</gpxx:State>
+                    <gpxx:Country>AU</gpxx:Country>
+                    <gpxx:PostalCode>3196</gpxx:PostalCode>
+                </gpxx:Address>
+            </gpxx:WaypointExtension>
+        </extensions>
+    </wpt>
+    <wpt lat="-38.038307" lon="145.1086177">
+        <time>2014-04-30T13:29:19Z</time>
+        <name>Edithvale Station</name>
+        <desc>Edithvale Train Station</desc>
+        <extensions>
+            <gpxx:WaypointExtension>
+                <gpxx:Proximity>1</gpxx:Proximity>
+                <gpxx:Address>
+                    <gpxx:StreetAddress>Nepean Highway Edithvale VIC 3196</gpxx:StreetAddress>
+                    <gpxx:City>Edithvale</gpxx:City>
+                    <gpxx:State>VIC</gpxx:State>
+                    <gpxx:Country>AU</gpxx:Country>
+                    <gpxx:PostalCode>3196</gpxx:PostalCode>
+                </gpxx:Address>
+            </gpxx:WaypointExtension>
+        </extensions>
+    </wpt>
+    <wpt lat="-38.038307" lon="145.1086177">
+        <time>2014-04-30T13:29:19Z</time>
+        <name>Edithvale Station</name>
+        <desc>Edithvale Train Station</desc>
+        <extensions>
+            <gpxx:WaypointExtension>
+                <gpxx:Proximity>1</gpxx:Proximity>
+                <gpxx:Address>
+                    <gpxx:StreetAddress>Nepean Highway Edithvale VIC 3196</gpxx:StreetAddress>
+                    <gpxx:City>Edithvale</gpxx:City>
+                    <gpxx:State>VIC</gpxx:State>
+                    <gpxx:Country>AU</gpxx:Country>
+                    <gpxx:PostalCode>3196</gpxx:PostalCode>
+                </gpxx:Address>
+            </gpxx:WaypointExtension>
+        </extensions>
+    </wpt>
+    <wpt lat="-38.038307" lon="145.1086177">
+        <time>2014-04-30T13:29:19Z</time>
+        <name>Edithvale Station</name>
+        <desc>Edithvale Train Station</desc>
+        <extensions>
+            <gpxx:WaypointExtension>
+                <gpxx:Proximity>1</gpxx:Proximity>
+                <gpxx:Address>
+                    <gpxx:StreetAddress>Nepean Highway Edithvale VIC 3196</gpxx:StreetAddress>
+                    <gpxx:City>Edithvale</gpxx:City>
+                    <gpxx:State>VIC</gpxx:State>
+                    <gpxx:Country>AU</gpxx:Country>
+                    <gpxx:PostalCode>3196</gpxx:PostalCode>
+                </gpxx:Address>
+            </gpxx:WaypointExtension>
+        </extensions>
+    </wpt>
+    <wpt lat="-38.038307" lon="145.1086177">
+        <time>2014-04-30T13:29:19Z</time>
+        <name>Edithvale Station</name>
+        <desc>Edithvale Train Station</desc>
+        <extensions>
+            <gpxx:WaypointExtension>
+                <gpxx:Proximity>1</gpxx:Proximity>
+                <gpxx:Address>
+                    <gpxx:StreetAddress>Nepean Highway Edithvale VIC 3196</gpxx:StreetAddress>
+                    <gpxx:City>Edithvale</gpxx:City>
+                    <gpxx:State>VIC</gpxx:State>
+                    <gpxx:Country>AU</gpxx:Country>
+                    <gpxx:PostalCode>3196</gpxx:PostalCode>
+                </gpxx:Address>
+            </gpxx:WaypointExtension>
+        </extensions>
+    </wpt>
+    <wpt lat="-38.038307" lon="145.1086177">
+        <time>2014-04-30T13:29:19Z</time>
+        <name>Edithvale Station</name>
+        <desc>Edithvale Train Station</desc>
+        <extensions>
+            <gpxx:WaypointExtension>
+                <gpxx:Proximity>1</gpxx:Proximity>
+                <gpxx:Address>
+                    <gpxx:StreetAddress>Nepean Highway Edithvale VIC 3196</gpxx:StreetAddress>
+                    <gpxx:City>Edithvale</gpxx:City>
+                    <gpxx:State>VIC</gpxx:State>
+                    <gpxx:Country>AU</gpxx:Country>
+                    <gpxx:PostalCode>3196</gpxx:PostalCode>
+                </gpxx:Address>
+            </gpxx:WaypointExtension>
+        </extensions>
+    </wpt>
+    <wpt lat="-38.0261138" lon="145.1029657">
+        <time>2014-04-30T13:29:19Z</time>
+        <name>Aspindale Station</name>
+        <desc>Aspindale Train Station</desc>
+        <extensions>
+            <gpxx:WaypointExtension>
+                <gpxx:Proximity>1</gpxx:Proximity>
+                <gpxx:Address>
+                    <gpxx:StreetAddress>Nepean Highway Aspindale VIC 3195</gpxx:StreetAddress>
+                    <gpxx:City>Aspindale</gpxx:City>
+                    <gpxx:State>VIC</gpxx:State>
+                    <gpxx:Country>AU</gpxx:Country>
+                    <gpxx:PostalCode>3195</gpxx:PostalCode>
+                </gpxx:Address>
+            </gpxx:WaypointExtension>
+        </extensions>
+    </wpt>
+    <wpt lat="-38.0261138" lon="145.1029657">
+        <time>2014-04-30T13:29:19Z</time>
+        <name>Aspindale Station</name>
+        <desc>Aspindale Train Station</desc>
+        <extensions>
+            <gpxx:WaypointExtension>
+                <gpxx:Proximity>1</gpxx:Proximity>
+                <gpxx:Address>
+                    <gpxx:StreetAddress>Nepean Highway Aspindale VIC 3195</gpxx:StreetAddress>
+                    <gpxx:City>Aspindale</gpxx:City>
+                    <gpxx:State>VIC</gpxx:State>
+                    <gpxx:Country>AU</gpxx:Country>
+                    <gpxx:PostalCode>3195</gpxx:PostalCode>
+                </gpxx:Address>
+            </gpxx:WaypointExtension>
+        </extensions>
+    </wpt>
+    <wpt lat="-38.0261138" lon="145.1029657">
+        <time>2014-04-30T13:29:19Z</time>
+        <name>Aspindale Station</name>
+        <desc>Aspindale Train Station</desc>
+        <extensions>
+            <gpxx:WaypointExtension>
+                <gpxx:Proximity>1</gpxx:Proximity>
+                <gpxx:Address>
+                    <gpxx:StreetAddress>Nepean Highway Aspindale VIC 3195</gpxx:StreetAddress>
+                    <gpxx:City>Aspindale</gpxx:City>
+                    <gpxx:State>VIC</gpxx:State>
+                    <gpxx:Country>AU</gpxx:Country>
+                    <gpxx:PostalCode>3195</gpxx:PostalCode>
+                </gpxx:Address>
+            </gpxx:WaypointExtension>
+        </extensions>
+    </wpt>
+    <wpt lat="-38.0261138" lon="145.1029657">
+        <time>2014-04-30T13:29:19Z</time>
+        <name>Aspindale Station</name>
+        <desc>Aspindale Train Station</desc>
+        <extensions>
+            <gpxx:WaypointExtension>
+                <gpxx:Proximity>1</gpxx:Proximity>
+                <gpxx:Address>
+                    <gpxx:StreetAddress>Nepean Highway Aspindale VIC 3195</gpxx:StreetAddress>
+                    <gpxx:City>Aspindale</gpxx:City>
+                    <gpxx:State>VIC</gpxx:State>
+                    <gpxx:Country>AU</gpxx:Country>
+                    <gpxx:PostalCode>3195</gpxx:PostalCode>
+                </gpxx:Address>
+            </gpxx:WaypointExtension>
+        </extensions>
+    </wpt>
+    <wpt lat="-38.0261138" lon="145.1029657">
+        <time>2014-04-30T13:29:19Z</time>
+        <name>Aspindale Station</name>
+        <desc>Aspindale Train Station</desc>
+        <extensions>
+            <gpxx:WaypointExtension>
+                <gpxx:Proximity>1</gpxx:Proximity>
+                <gpxx:Address>
+                    <gpxx:StreetAddress>Nepean Highway Aspindale VIC 3195</gpxx:StreetAddress>
+                    <gpxx:City>Aspindale</gpxx:City>
+                    <gpxx:State>VIC</gpxx:State>
+                    <gpxx:Country>AU</gpxx:Country>
+                    <gpxx:PostalCode>3195</gpxx:PostalCode>
+                </gpxx:Address>
+            </gpxx:WaypointExtension>
+        </extensions>
+    </wpt>
+    <wpt lat="-38.0261138" lon="145.1029657">
+        <time>2014-04-30T13:29:19Z</time>
+        <name>Aspindale Station</name>
+        <desc>Aspindale Train Station</desc>
+        <extensions>
+            <gpxx:WaypointExtension>
+                <gpxx:Proximity>1</gpxx:Proximity>
+                <gpxx:Address>
+                    <gpxx:StreetAddress>Nepean Highway Aspindale VIC 3195</gpxx:StreetAddress>
+                    <gpxx:City>Aspindale</gpxx:City>
+                    <gpxx:State>VIC</gpxx:State>
+                    <gpxx:Country>AU</gpxx:Country>
+                    <gpxx:PostalCode>3195</gpxx:PostalCode>
+                </gpxx:Address>
+            </gpxx:WaypointExtension>
+        </extensions>
+    </wpt>
+    <wpt lat="-38.007041" lon="145.0875275">
+        <time>2014-04-30T13:29:19Z</time>
+        <name>Mordialloc Station</name>
+        <desc>Mordialloc Train Station</desc>
+        <extensions>
+            <gpxx:WaypointExtension>
+                <gpxx:Proximity>1</gpxx:Proximity>
+                <gpxx:Address>
+                    <gpxx:StreetAddress>Nepean Highway Mordialloc VIC 3195</gpxx:StreetAddress>
+                    <gpxx:City>Aspindale</gpxx:City>
+                    <gpxx:State>VIC</gpxx:State>
+                    <gpxx:Country>AU</gpxx:Country>
+                    <gpxx:PostalCode>3195</gpxx:PostalCode>
+                </gpxx:Address>
+            </gpxx:WaypointExtension>
+        </extensions>
+    </wpt>
+    <wpt lat="-38.007041" lon="145.0875275">
+        <time>2014-04-30T13:29:19Z</time>
+        <name>Mordialloc Station</name>
+        <desc>Mordialloc Train Station</desc>
+        <extensions>
+            <gpxx:WaypointExtension>
+                <gpxx:Proximity>1</gpxx:Proximity>
+                <gpxx:Address>
+                    <gpxx:StreetAddress>Nepean Highway Mordialloc VIC 3195</gpxx:StreetAddress>
+                    <gpxx:City>Aspindale</gpxx:City>
+                    <gpxx:State>VIC</gpxx:State>
+                    <gpxx:Country>AU</gpxx:Country>
+                    <gpxx:PostalCode>3195</gpxx:PostalCode>
+                </gpxx:Address>
+            </gpxx:WaypointExtension>
+        </extensions>
+    </wpt>
+    <wpt lat="-38.007041" lon="145.0875275">
+        <time>2014-04-30T13:29:19Z</time>
+        <name>Mordialloc Station</name>
+        <desc>Mordialloc Train Station</desc>
+        <extensions>
+            <gpxx:WaypointExtension>
+                <gpxx:Proximity>1</gpxx:Proximity>
+                <gpxx:Address>
+                    <gpxx:StreetAddress>Nepean Highway Mordialloc VIC 3195</gpxx:StreetAddress>
+                    <gpxx:City>Aspindale</gpxx:City>
+                    <gpxx:State>VIC</gpxx:State>
+                    <gpxx:Country>AU</gpxx:Country>
+                    <gpxx:PostalCode>3195</gpxx:PostalCode>
+                </gpxx:Address>
+            </gpxx:WaypointExtension>
+        </extensions>
+    </wpt>
+    <wpt lat="-38.007041" lon="145.0875275">
+        <time>2014-04-30T13:29:19Z</time>
+        <name>Mordialloc Station</name>
+        <desc>Mordialloc Train Station</desc>
+        <extensions>
+            <gpxx:WaypointExtension>
+                <gpxx:Proximity>1</gpxx:Proximity>
+                <gpxx:Address>
+                    <gpxx:StreetAddress>Nepean Highway Mordialloc VIC 3195</gpxx:StreetAddress>
+                    <gpxx:City>Aspindale</gpxx:City>
+                    <gpxx:State>VIC</gpxx:State>
+                    <gpxx:Country>AU</gpxx:Country>
+                    <gpxx:PostalCode>3195</gpxx:PostalCode>
+                </gpxx:Address>
+            </gpxx:WaypointExtension>
+        </extensions>
+    </wpt>
+    <wpt lat="-38.007041" lon="145.0875275">
+        <time>2014-04-30T13:29:19Z</time>
+        <name>Mordialloc Station</name>
+        <desc>Mordialloc Train Station</desc>
+        <extensions>
+            <gpxx:WaypointExtension>
+                <gpxx:Proximity>1</gpxx:Proximity>
+                <gpxx:Address>
+                    <gpxx:StreetAddress>Nepean Highway Mordialloc VIC 3195</gpxx:StreetAddress>
+                    <gpxx:City>Aspindale</gpxx:City>
+                    <gpxx:State>VIC</gpxx:State>
+                    <gpxx:Country>AU</gpxx:Country>
+                    <gpxx:PostalCode>3195</gpxx:PostalCode>
+                </gpxx:Address>
+            </gpxx:WaypointExtension>
+        </extensions>
+    </wpt>
+    <wpt lat="-38.007041" lon="145.0875275">
+        <time>2014-04-30T13:29:19Z</time>
+        <name>Mordialloc Station</name>
+        <desc>Mordialloc Train Station</desc>
+        <extensions>
+            <gpxx:WaypointExtension>
+                <gpxx:Proximity>1</gpxx:Proximity>
+                <gpxx:Address>
+                    <gpxx:StreetAddress>Nepean Highway Mordialloc VIC 3195</gpxx:StreetAddress>
+                    <gpxx:City>Aspindale</gpxx:City>
+                    <gpxx:State>VIC</gpxx:State>
+                    <gpxx:Country>AU</gpxx:Country>
+                    <gpxx:PostalCode>3195</gpxx:PostalCode>
+                </gpxx:Address>
+            </gpxx:WaypointExtension>
+        </extensions>
+    </wpt>
+    
+    <!-- RETURN JOURNY!! -->
+    <wpt lat="-38.007041" lon="145.0875275">
+        <time>2014-04-30T13:29:19Z</time>
+        <name>Mordialloc Station</name>
+        <desc>Mordialloc Train Station</desc>
+        <extensions>
+            <gpxx:WaypointExtension>
+                <gpxx:Proximity>1</gpxx:Proximity>
+                <gpxx:Address>
+                    <gpxx:StreetAddress>Nepean Highway Mordialloc VIC 3195</gpxx:StreetAddress>
+                    <gpxx:City>Aspindale</gpxx:City>
+                    <gpxx:State>VIC</gpxx:State>
+                    <gpxx:Country>AU</gpxx:Country>
+                    <gpxx:PostalCode>3195</gpxx:PostalCode>
+                </gpxx:Address>
+            </gpxx:WaypointExtension>
+        </extensions>
+    </wpt>
+    <wpt lat="-38.007041" lon="145.0875275">
+        <time>2014-04-30T13:29:19Z</time>
+        <name>Mordialloc Station</name>
+        <desc>Mordialloc Train Station</desc>
+        <extensions>
+            <gpxx:WaypointExtension>
+                <gpxx:Proximity>1</gpxx:Proximity>
+                <gpxx:Address>
+                    <gpxx:StreetAddress>Nepean Highway Mordialloc VIC 3195</gpxx:StreetAddress>
+                    <gpxx:City>Aspindale</gpxx:City>
+                    <gpxx:State>VIC</gpxx:State>
+                    <gpxx:Country>AU</gpxx:Country>
+                    <gpxx:PostalCode>3195</gpxx:PostalCode>
+                </gpxx:Address>
+            </gpxx:WaypointExtension>
+        </extensions>
+    </wpt>
+    <wpt lat="-38.007041" lon="145.0875275">
+        <time>2014-04-30T13:29:19Z</time>
+        <name>Mordialloc Station</name>
+        <desc>Mordialloc Train Station</desc>
+        <extensions>
+            <gpxx:WaypointExtension>
+                <gpxx:Proximity>1</gpxx:Proximity>
+                <gpxx:Address>
+                    <gpxx:StreetAddress>Nepean Highway Mordialloc VIC 3195</gpxx:StreetAddress>
+                    <gpxx:City>Aspindale</gpxx:City>
+                    <gpxx:State>VIC</gpxx:State>
+                    <gpxx:Country>AU</gpxx:Country>
+                    <gpxx:PostalCode>3195</gpxx:PostalCode>
+                </gpxx:Address>
+            </gpxx:WaypointExtension>
+        </extensions>
+    </wpt>
+    <wpt lat="-38.007041" lon="145.0875275">
+        <time>2014-04-30T13:29:19Z</time>
+        <name>Mordialloc Station</name>
+        <desc>Mordialloc Train Station</desc>
+        <extensions>
+            <gpxx:WaypointExtension>
+                <gpxx:Proximity>1</gpxx:Proximity>
+                <gpxx:Address>
+                    <gpxx:StreetAddress>Nepean Highway Mordialloc VIC 3195</gpxx:StreetAddress>
+                    <gpxx:City>Aspindale</gpxx:City>
+                    <gpxx:State>VIC</gpxx:State>
+                    <gpxx:Country>AU</gpxx:Country>
+                    <gpxx:PostalCode>3195</gpxx:PostalCode>
+                </gpxx:Address>
+            </gpxx:WaypointExtension>
+        </extensions>
+    </wpt>
+    <wpt lat="-38.007041" lon="145.0875275">
+        <time>2014-04-30T13:29:19Z</time>
+        <name>Mordialloc Station</name>
+        <desc>Mordialloc Train Station</desc>
+        <extensions>
+            <gpxx:WaypointExtension>
+                <gpxx:Proximity>1</gpxx:Proximity>
+                <gpxx:Address>
+                    <gpxx:StreetAddress>Nepean Highway Mordialloc VIC 3195</gpxx:StreetAddress>
+                    <gpxx:City>Aspindale</gpxx:City>
+                    <gpxx:State>VIC</gpxx:State>
+                    <gpxx:Country>AU</gpxx:Country>
+                    <gpxx:PostalCode>3195</gpxx:PostalCode>
+                </gpxx:Address>
+            </gpxx:WaypointExtension>
+        </extensions>
+    </wpt>
+    <wpt lat="-38.007041" lon="145.0875275">
+        <time>2014-04-30T13:29:19Z</time>
+        <name>Mordialloc Station</name>
+        <desc>Mordialloc Train Station</desc>
+        <extensions>
+            <gpxx:WaypointExtension>
+                <gpxx:Proximity>1</gpxx:Proximity>
+                <gpxx:Address>
+                    <gpxx:StreetAddress>Nepean Highway Mordialloc VIC 3195</gpxx:StreetAddress>
+                    <gpxx:City>Aspindale</gpxx:City>
+                    <gpxx:State>VIC</gpxx:State>
+                    <gpxx:Country>AU</gpxx:Country>
+                    <gpxx:PostalCode>3195</gpxx:PostalCode>
+                </gpxx:Address>
+            </gpxx:WaypointExtension>
+        </extensions>
+    </wpt>
+    <wpt lat="-38.0261138" lon="145.1029657">
+        <time>2014-04-30T13:29:19Z</time>
+        <name>Aspindale Station</name>
+        <desc>Aspindale Train Station</desc>
+        <extensions>
+            <gpxx:WaypointExtension>
+                <gpxx:Proximity>1</gpxx:Proximity>
+                <gpxx:Address>
+                    <gpxx:StreetAddress>Nepean Highway Aspindale VIC 3195</gpxx:StreetAddress>
+                    <gpxx:City>Aspindale</gpxx:City>
+                    <gpxx:State>VIC</gpxx:State>
+                    <gpxx:Country>AU</gpxx:Country>
+                    <gpxx:PostalCode>3195</gpxx:PostalCode>
+                </gpxx:Address>
+            </gpxx:WaypointExtension>
+        </extensions>
+    </wpt>
+    <wpt lat="-38.0261138" lon="145.1029657">
+        <time>2014-04-30T13:29:19Z</time>
+        <name>Aspindale Station</name>
+        <desc>Aspindale Train Station</desc>
+        <extensions>
+            <gpxx:WaypointExtension>
+                <gpxx:Proximity>1</gpxx:Proximity>
+                <gpxx:Address>
+                    <gpxx:StreetAddress>Nepean Highway Aspindale VIC 3195</gpxx:StreetAddress>
+                    <gpxx:City>Aspindale</gpxx:City>
+                    <gpxx:State>VIC</gpxx:State>
+                    <gpxx:Country>AU</gpxx:Country>
+                    <gpxx:PostalCode>3195</gpxx:PostalCode>
+                </gpxx:Address>
+            </gpxx:WaypointExtension>
+        </extensions>
+    </wpt>
+    <wpt lat="-38.0261138" lon="145.1029657">
+        <time>2014-04-30T13:29:19Z</time>
+        <name>Aspindale Station</name>
+        <desc>Aspindale Train Station</desc>
+        <extensions>
+            <gpxx:WaypointExtension>
+                <gpxx:Proximity>1</gpxx:Proximity>
+                <gpxx:Address>
+                    <gpxx:StreetAddress>Nepean Highway Aspindale VIC 3195</gpxx:StreetAddress>
+                    <gpxx:City>Aspindale</gpxx:City>
+                    <gpxx:State>VIC</gpxx:State>
+                    <gpxx:Country>AU</gpxx:Country>
+                    <gpxx:PostalCode>3195</gpxx:PostalCode>
+                </gpxx:Address>
+            </gpxx:WaypointExtension>
+        </extensions>
+    </wpt>
+    <wpt lat="-38.0261138" lon="145.1029657">
+        <time>2014-04-30T13:29:19Z</time>
+        <name>Aspindale Station</name>
+        <desc>Aspindale Train Station</desc>
+        <extensions>
+            <gpxx:WaypointExtension>
+                <gpxx:Proximity>1</gpxx:Proximity>
+                <gpxx:Address>
+                    <gpxx:StreetAddress>Nepean Highway Aspindale VIC 3195</gpxx:StreetAddress>
+                    <gpxx:City>Aspindale</gpxx:City>
+                    <gpxx:State>VIC</gpxx:State>
+                    <gpxx:Country>AU</gpxx:Country>
+                    <gpxx:PostalCode>3195</gpxx:PostalCode>
+                </gpxx:Address>
+            </gpxx:WaypointExtension>
+        </extensions>
+    </wpt>
+    <wpt lat="-38.0261138" lon="145.1029657">
+        <time>2014-04-30T13:29:19Z</time>
+        <name>Aspindale Station</name>
+        <desc>Aspindale Train Station</desc>
+        <extensions>
+            <gpxx:WaypointExtension>
+                <gpxx:Proximity>1</gpxx:Proximity>
+                <gpxx:Address>
+                    <gpxx:StreetAddress>Nepean Highway Aspindale VIC 3195</gpxx:StreetAddress>
+                    <gpxx:City>Aspindale</gpxx:City>
+                    <gpxx:State>VIC</gpxx:State>
+                    <gpxx:Country>AU</gpxx:Country>
+                    <gpxx:PostalCode>3195</gpxx:PostalCode>
+                </gpxx:Address>
+            </gpxx:WaypointExtension>
+        </extensions>
+    </wpt>
+    <wpt lat="-38.0261138" lon="145.1029657">
+        <time>2014-04-30T13:29:19Z</time>
+        <name>Aspindale Station</name>
+        <desc>Aspindale Train Station</desc>
+        <extensions>
+            <gpxx:WaypointExtension>
+                <gpxx:Proximity>1</gpxx:Proximity>
+                <gpxx:Address>
+                    <gpxx:StreetAddress>Nepean Highway Aspindale VIC 3195</gpxx:StreetAddress>
+                    <gpxx:City>Aspindale</gpxx:City>
+                    <gpxx:State>VIC</gpxx:State>
+                    <gpxx:Country>AU</gpxx:Country>
+                    <gpxx:PostalCode>3195</gpxx:PostalCode>
+                </gpxx:Address>
+            </gpxx:WaypointExtension>
+        </extensions>
+    </wpt>
+   <wpt lat="-38.038307" lon="145.1086177">
+        <time>2014-04-30T13:29:19Z</time>
+        <name>Edithvale Station</name>
+        <desc>Edithvale Train Station</desc>
+        <extensions>
+            <gpxx:WaypointExtension>
+                <gpxx:Proximity>1</gpxx:Proximity>
+                <gpxx:Address>
+                    <gpxx:StreetAddress>Nepean Highway Edithvale VIC 3196</gpxx:StreetAddress>
+                    <gpxx:City>Edithvale</gpxx:City>
+                    <gpxx:State>VIC</gpxx:State>
+                    <gpxx:Country>AU</gpxx:Country>
+                    <gpxx:PostalCode>3196</gpxx:PostalCode>
+                </gpxx:Address>
+            </gpxx:WaypointExtension>
+        </extensions>
+    </wpt>
+   <wpt lat="-38.038307" lon="145.1086177">
+       <time>2014-04-30T13:29:19Z</time>
+       <name>Edithvale Station</name>
+       <desc>Edithvale Train Station</desc>
+       <extensions>
+           <gpxx:WaypointExtension>
+               <gpxx:Proximity>1</gpxx:Proximity>
+               <gpxx:Address>
+                   <gpxx:StreetAddress>Nepean Highway Edithvale VIC 3196</gpxx:StreetAddress>
+                   <gpxx:City>Edithvale</gpxx:City>
+                   <gpxx:State>VIC</gpxx:State>
+                   <gpxx:Country>AU</gpxx:Country>
+                   <gpxx:PostalCode>3196</gpxx:PostalCode>
+               </gpxx:Address>
+           </gpxx:WaypointExtension>
+       </extensions>
+   </wpt>
+   <wpt lat="-38.038307" lon="145.1086177">
+       <time>2014-04-30T13:29:19Z</time>
+       <name>Edithvale Station</name>
+       <desc>Edithvale Train Station</desc>
+       <extensions>
+           <gpxx:WaypointExtension>
+               <gpxx:Proximity>1</gpxx:Proximity>
+               <gpxx:Address>
+                   <gpxx:StreetAddress>Nepean Highway Edithvale VIC 3196</gpxx:StreetAddress>
+                   <gpxx:City>Edithvale</gpxx:City>
+                   <gpxx:State>VIC</gpxx:State>
+                   <gpxx:Country>AU</gpxx:Country>
+                   <gpxx:PostalCode>3196</gpxx:PostalCode>
+               </gpxx:Address>
+           </gpxx:WaypointExtension>
+       </extensions>
+   </wpt>
+   <wpt lat="-38.038307" lon="145.1086177">
+       <time>2014-04-30T13:29:19Z</time>
+       <name>Edithvale Station</name>
+       <desc>Edithvale Train Station</desc>
+       <extensions>
+           <gpxx:WaypointExtension>
+               <gpxx:Proximity>1</gpxx:Proximity>
+               <gpxx:Address>
+                   <gpxx:StreetAddress>Nepean Highway Edithvale VIC 3196</gpxx:StreetAddress>
+                   <gpxx:City>Edithvale</gpxx:City>
+                   <gpxx:State>VIC</gpxx:State>
+                   <gpxx:Country>AU</gpxx:Country>
+                   <gpxx:PostalCode>3196</gpxx:PostalCode>
+               </gpxx:Address>
+           </gpxx:WaypointExtension>
+       </extensions>
+   </wpt>
+   <wpt lat="-38.038307" lon="145.1086177">
+       <time>2014-04-30T13:29:19Z</time>
+       <name>Edithvale Station</name>
+       <desc>Edithvale Train Station</desc>
+       <extensions>
+           <gpxx:WaypointExtension>
+               <gpxx:Proximity>1</gpxx:Proximity>
+               <gpxx:Address>
+                   <gpxx:StreetAddress>Nepean Highway Edithvale VIC 3196</gpxx:StreetAddress>
+                   <gpxx:City>Edithvale</gpxx:City>
+                   <gpxx:State>VIC</gpxx:State>
+                   <gpxx:Country>AU</gpxx:Country>
+                   <gpxx:PostalCode>3196</gpxx:PostalCode>
+               </gpxx:Address>
+           </gpxx:WaypointExtension>
+       </extensions>
+   </wpt>
+   <wpt lat="-38.038307" lon="145.1086177">
+       <time>2014-04-30T13:29:19Z</time>
+       <name>Edithvale Station</name>
+       <desc>Edithvale Train Station</desc>
+       <extensions>
+           <gpxx:WaypointExtension>
+               <gpxx:Proximity>1</gpxx:Proximity>
+               <gpxx:Address>
+                   <gpxx:StreetAddress>Nepean Highway Edithvale VIC 3196</gpxx:StreetAddress>
+                   <gpxx:City>Edithvale</gpxx:City>
+                   <gpxx:State>VIC</gpxx:State>
+                   <gpxx:Country>AU</gpxx:Country>
+                   <gpxx:PostalCode>3196</gpxx:PostalCode>
+               </gpxx:Address>
+           </gpxx:WaypointExtension>
+       </extensions>
+   </wpt>
+    <wpt lat="-38.052220" lon="145.116133">
+        <time>2014-04-30T13:29:19Z</time>
+        <name>Chelsea Station</name>
+        <desc>Chelsea Train Station</desc>
+        <extensions>
+            <gpxx:WaypointExtension>
+                <gpxx:Proximity>1</gpxx:Proximity>
+                <gpxx:Address>
+                    <gpxx:StreetAddress>404–406 Nepean Highway Chelsea VIC 3196</gpxx:StreetAddress>
+                    <gpxx:City>Chelsea</gpxx:City>
+                    <gpxx:State>VIC</gpxx:State>
+                    <gpxx:Country>AU</gpxx:Country>
+                    <gpxx:PostalCode>3196</gpxx:PostalCode>
+                </gpxx:Address>
+            </gpxx:WaypointExtension>
+        </extensions>
+    </wpt>
+    <wpt lat="-38.052220" lon="145.116133">
+        <time>2014-04-30T13:29:19Z</time>
+        <name>Chelsea Station</name>
+        <desc>Chelsea Train Station</desc>
+        <extensions>
+            <gpxx:WaypointExtension>
+                <gpxx:Proximity>1</gpxx:Proximity>
+                <gpxx:Address>
+                    <gpxx:StreetAddress>404–406 Nepean Highway Chelsea VIC 3196</gpxx:StreetAddress>
+                    <gpxx:City>Chelsea</gpxx:City>
+                    <gpxx:State>VIC</gpxx:State>
+                    <gpxx:Country>AU</gpxx:Country>
+                    <gpxx:PostalCode>3196</gpxx:PostalCode>
+                </gpxx:Address>
+            </gpxx:WaypointExtension>
+        </extensions>
+    </wpt>
+    <wpt lat="-38.052220" lon="145.116133">
+        <time>2014-04-30T13:29:19Z</time>
+        <name>Chelsea Station</name>
+        <desc>Chelsea Train Station</desc>
+        <extensions>
+            <gpxx:WaypointExtension>
+                <gpxx:Proximity>1</gpxx:Proximity>
+                <gpxx:Address>
+                    <gpxx:StreetAddress>404–406 Nepean Highway Chelsea VIC 3196</gpxx:StreetAddress>
+                    <gpxx:City>Chelsea</gpxx:City>
+                    <gpxx:State>VIC</gpxx:State>
+                    <gpxx:Country>AU</gpxx:Country>
+                    <gpxx:PostalCode>3196</gpxx:PostalCode>
+                </gpxx:Address>
+            </gpxx:WaypointExtension>
+        </extensions>
+    </wpt>
+    <wpt lat="-38.052220" lon="145.116133">
+        <time>2014-04-30T13:29:19Z</time>
+        <name>Chelsea Station</name>
+        <desc>Chelsea Train Station</desc>
+        <extensions>
+            <gpxx:WaypointExtension>
+                <gpxx:Proximity>1</gpxx:Proximity>
+                <gpxx:Address>
+                    <gpxx:StreetAddress>404–406 Nepean Highway Chelsea VIC 3196</gpxx:StreetAddress>
+                    <gpxx:City>Chelsea</gpxx:City>
+                    <gpxx:State>VIC</gpxx:State>
+                    <gpxx:Country>AU</gpxx:Country>
+                    <gpxx:PostalCode>3196</gpxx:PostalCode>
+                </gpxx:Address>
+            </gpxx:WaypointExtension>
+        </extensions>
+    </wpt>
+    <wpt lat="-38.052220" lon="145.116133">
+        <time>2014-04-30T13:29:19Z</time>
+        <name>Chelsea Station</name>
+        <desc>Chelsea Train Station</desc>
+        <extensions>
+            <gpxx:WaypointExtension>
+                <gpxx:Proximity>1</gpxx:Proximity>
+                <gpxx:Address>
+                    <gpxx:StreetAddress>404–406 Nepean Highway Chelsea VIC 3196</gpxx:StreetAddress>
+                    <gpxx:City>Chelsea</gpxx:City>
+                    <gpxx:State>VIC</gpxx:State>
+                    <gpxx:Country>AU</gpxx:Country>
+                    <gpxx:PostalCode>3196</gpxx:PostalCode>
+                </gpxx:Address>
+            </gpxx:WaypointExtension>
+        </extensions>
+    </wpt>
+    <wpt lat="-38.052220" lon="145.116133">
+        <time>2014-04-30T13:29:19Z</time>
+        <name>Chelsea Station</name>
+        <desc>Chelsea Train Station</desc>
+        <extensions>
+            <gpxx:WaypointExtension>
+                <gpxx:Proximity>1</gpxx:Proximity>
+                <gpxx:Address>
+                    <gpxx:StreetAddress>404–406 Nepean Highway Chelsea VIC 3196</gpxx:StreetAddress>
+                    <gpxx:City>Chelsea</gpxx:City>
+                    <gpxx:State>VIC</gpxx:State>
+                    <gpxx:Country>AU</gpxx:Country>
+                    <gpxx:PostalCode>3196</gpxx:PostalCode>
+                </gpxx:Address>
+            </gpxx:WaypointExtension>
+        </extensions>
+    </wpt>
+    <wpt lat="-38.062821" lon="145.119766">
+        <time>2014-04-30T13:29:19Z</time>
+        <name>Bonbeach Station</name>
+        <desc>Bonbeach Train Station</desc>
+        <extensions>
+            <gpxx:WaypointExtension>
+                <gpxx:Proximity>1</gpxx:Proximity>
+                <gpxx:Address>
+                    <gpxx:StreetAddress>Nepean Highway, Bonbeach VIC 3196, Australia</gpxx:StreetAddress>
+                    <gpxx:City>Bonbeach</gpxx:City>
+                    <gpxx:State>VIC</gpxx:State>
+                    <gpxx:Country>AU</gpxx:Country>
+                    <gpxx:PostalCode>3196</gpxx:PostalCode>
+                </gpxx:Address>
+            </gpxx:WaypointExtension>
+        </extensions>
+    </wpt>
+    <wpt lat="-38.062821" lon="145.119766">
+        <time>2014-04-30T13:29:19Z</time>
+        <name>Bonbeach Station</name>
+        <desc>Bonbeach Train Station</desc>
+        <extensions>
+            <gpxx:WaypointExtension>
+                <gpxx:Proximity>1</gpxx:Proximity>
+                <gpxx:Address>
+                    <gpxx:StreetAddress>Nepean Highway, Bonbeach VIC 3196, Australia</gpxx:StreetAddress>
+                    <gpxx:City>Bonbeach</gpxx:City>
+                    <gpxx:State>VIC</gpxx:State>
+                    <gpxx:Country>AU</gpxx:Country>
+                    <gpxx:PostalCode>3196</gpxx:PostalCode>
+                </gpxx:Address>
+            </gpxx:WaypointExtension>
+        </extensions>
+    </wpt>
+    <wpt lat="-38.062821" lon="145.119766">
+        <time>2014-04-30T13:29:19Z</time>
+        <name>Bonbeach Station</name>
+        <desc>Bonbeach Train Station</desc>
+        <extensions>
+            <gpxx:WaypointExtension>
+                <gpxx:Proximity>1</gpxx:Proximity>
+                <gpxx:Address>
+                    <gpxx:StreetAddress>Nepean Highway, Bonbeach VIC 3196, Australia</gpxx:StreetAddress>
+                    <gpxx:City>Bonbeach</gpxx:City>
+                    <gpxx:State>VIC</gpxx:State>
+                    <gpxx:Country>AU</gpxx:Country>
+                    <gpxx:PostalCode>3196</gpxx:PostalCode>
+                </gpxx:Address>
+            </gpxx:WaypointExtension>
+        </extensions>
+    </wpt>
+    <wpt lat="-38.062821" lon="145.119766">
+        <time>2014-04-30T13:29:19Z</time>
+        <name>Bonbeach Station</name>
+        <desc>Bonbeach Train Station</desc>
+        <extensions>
+            <gpxx:WaypointExtension>
+                <gpxx:Proximity>1</gpxx:Proximity>
+                <gpxx:Address>
+                    <gpxx:StreetAddress>Nepean Highway, Bonbeach VIC 3196, Australia</gpxx:StreetAddress>
+                    <gpxx:City>Bonbeach</gpxx:City>
+                    <gpxx:State>VIC</gpxx:State>
+                    <gpxx:Country>AU</gpxx:Country>
+                    <gpxx:PostalCode>3196</gpxx:PostalCode>
+                </gpxx:Address>
+            </gpxx:WaypointExtension>
+        </extensions>
+    </wpt>
+    <wpt lat="-38.062821" lon="145.119766">
+        <time>2014-04-30T13:29:19Z</time>
+        <name>Bonbeach Station</name>
+        <desc>Bonbeach Train Station</desc>
+        <extensions>
+            <gpxx:WaypointExtension>
+                <gpxx:Proximity>1</gpxx:Proximity>
+                <gpxx:Address>
+                    <gpxx:StreetAddress>Nepean Highway, Bonbeach VIC 3196, Australia</gpxx:StreetAddress>
+                    <gpxx:City>Bonbeach</gpxx:City>
+                    <gpxx:State>VIC</gpxx:State>
+                    <gpxx:Country>AU</gpxx:Country>
+                    <gpxx:PostalCode>3196</gpxx:PostalCode>
+                </gpxx:Address>
+            </gpxx:WaypointExtension>
+        </extensions>
+    </wpt>
+    <wpt lat="-38.062821" lon="145.119766">
+        <time>2014-04-30T13:29:19Z</time>
+        <name>Bonbeach Station</name>
+        <desc>Bonbeach Train Station</desc>
+        <extensions>
+            <gpxx:WaypointExtension>
+                <gpxx:Proximity>1</gpxx:Proximity>
+                <gpxx:Address>
+                    <gpxx:StreetAddress>Nepean Highway, Bonbeach VIC 3196, Australia</gpxx:StreetAddress>
+                    <gpxx:City>Bonbeach</gpxx:City>
+                    <gpxx:State>VIC</gpxx:State>
+                    <gpxx:Country>AU</gpxx:Country>
+                    <gpxx:PostalCode>3196</gpxx:PostalCode>
+                </gpxx:Address>
+            </gpxx:WaypointExtension>
+        </extensions>
+    </wpt>
+    <wpt lat="-38.075575" lon="145.122556">
+        <time>2014-04-30T13:29:19Z</time>
+        <name>Carrum Station</name>
+        <desc>Carrum Train Station</desc>
+        <extensions>
+            <gpxx:WaypointExtension>
+                <gpxx:Proximity>1</gpxx:Proximity>
+                <gpxx:Address>
+                    <gpxx:StreetAddress>Nepean Highway, Carrum VIC 3197, Australia</gpxx:StreetAddress>
+                    <gpxx:City>Carrum</gpxx:City>
+                    <gpxx:State>VIC</gpxx:State>
+                    <gpxx:Country>AU</gpxx:Country>
+                    <gpxx:PostalCode>3197</gpxx:PostalCode>
+                </gpxx:Address>
+            </gpxx:WaypointExtension>
+        </extensions>
+    </wpt>
+    <wpt lat="-38.075575" lon="145.122556">
+        <time>2014-04-30T13:29:19Z</time>
+        <name>Carrum Station</name>
+        <desc>Carrum Train Station</desc>
+        <extensions>
+            <gpxx:WaypointExtension>
+                <gpxx:Proximity>1</gpxx:Proximity>
+                <gpxx:Address>
+                    <gpxx:StreetAddress>Nepean Highway, Carrum VIC 3197, Australia</gpxx:StreetAddress>
+                    <gpxx:City>Carrum</gpxx:City>
+                    <gpxx:State>VIC</gpxx:State>
+                    <gpxx:Country>AU</gpxx:Country>
+                    <gpxx:PostalCode>3197</gpxx:PostalCode>
+                </gpxx:Address>
+            </gpxx:WaypointExtension>
+        </extensions>
+    </wpt>
+    <wpt lat="-38.075575" lon="145.122556">
+        <time>2014-04-30T13:29:19Z</time>
+        <name>Carrum Station</name>
+        <desc>Carrum Train Station</desc>
+        <extensions>
+            <gpxx:WaypointExtension>
+                <gpxx:Proximity>1</gpxx:Proximity>
+                <gpxx:Address>
+                    <gpxx:StreetAddress>Nepean Highway, Carrum VIC 3197, Australia</gpxx:StreetAddress>
+                    <gpxx:City>Carrum</gpxx:City>
+                    <gpxx:State>VIC</gpxx:State>
+                    <gpxx:Country>AU</gpxx:Country>
+                    <gpxx:PostalCode>3197</gpxx:PostalCode>
+                </gpxx:Address>
+            </gpxx:WaypointExtension>
+        </extensions>
+    </wpt>
+    <wpt lat="-38.075575" lon="145.122556">
+        <time>2014-04-30T13:29:19Z</time>
+        <name>Carrum Station</name>
+        <desc>Carrum Train Station</desc>
+        <extensions>
+            <gpxx:WaypointExtension>
+                <gpxx:Proximity>1</gpxx:Proximity>
+                <gpxx:Address>
+                    <gpxx:StreetAddress>Nepean Highway, Carrum VIC 3197, Australia</gpxx:StreetAddress>
+                    <gpxx:City>Carrum</gpxx:City>
+                    <gpxx:State>VIC</gpxx:State>
+                    <gpxx:Country>AU</gpxx:Country>
+                    <gpxx:PostalCode>3197</gpxx:PostalCode>
+                </gpxx:Address>
+            </gpxx:WaypointExtension>
+        </extensions>
+    </wpt>
+    <wpt lat="-38.075575" lon="145.122556">
+        <time>2014-04-30T13:29:19Z</time>
+        <name>Carrum Station</name>
+        <desc>Carrum Train Station</desc>
+        <extensions>
+            <gpxx:WaypointExtension>
+                <gpxx:Proximity>1</gpxx:Proximity>
+                <gpxx:Address>
+                    <gpxx:StreetAddress>Nepean Highway, Carrum VIC 3197, Australia</gpxx:StreetAddress>
+                    <gpxx:City>Carrum</gpxx:City>
+                    <gpxx:State>VIC</gpxx:State>
+                    <gpxx:Country>AU</gpxx:Country>
+                    <gpxx:PostalCode>3197</gpxx:PostalCode>
+                </gpxx:Address>
+            </gpxx:WaypointExtension>
+        </extensions>
+    </wpt>
+    <wpt lat="-38.075575" lon="145.122556">
+        <time>2014-04-30T13:29:19Z</time>
+        <name>Carrum Station</name>
+        <desc>Carrum Train Station</desc>
+        <extensions>
+            <gpxx:WaypointExtension>
+                <gpxx:Proximity>1</gpxx:Proximity>
+                <gpxx:Address>
+                    <gpxx:StreetAddress>Nepean Highway, Carrum VIC 3197, Australia</gpxx:StreetAddress>
+                    <gpxx:City>Carrum</gpxx:City>
+                    <gpxx:State>VIC</gpxx:State>
+                    <gpxx:Country>AU</gpxx:Country>
+                    <gpxx:PostalCode>3197</gpxx:PostalCode>
+                </gpxx:Address>
+            </gpxx:WaypointExtension>
+        </extensions>
+    </wpt>
+    <wpt lat="-38.075575" lon="145.122556">
+        <time>2014-04-30T13:29:19Z</time>
+        <name>Carrum Station</name>
+        <desc>Carrum Train Station</desc>
+        <extensions>
+            <gpxx:WaypointExtension>
+                <gpxx:Proximity>1</gpxx:Proximity>
+                <gpxx:Address>
+                    <gpxx:StreetAddress>Nepean Highway, Carrum VIC 3197, Australia</gpxx:StreetAddress>
+                    <gpxx:City>Carrum</gpxx:City>
+                    <gpxx:State>VIC</gpxx:State>
+                    <gpxx:Country>AU</gpxx:Country>
+                    <gpxx:PostalCode>3197</gpxx:PostalCode>
+                </gpxx:Address>
+            </gpxx:WaypointExtension>
+        </extensions>
+    </wpt>
+    <wpt lat="-38.104119" lon="145.128163">
+        <time>2014-04-30T13:29:19Z</time>
+        <name>Seaford Station</name>
+        <desc>Seaford Train Station</desc>
+        <extensions>
+            <gpxx:WaypointExtension>
+                <gpxx:Proximity>1</gpxx:Proximity>
+                <gpxx:Address>
+                    <gpxx:StreetAddress>45 Railway Parade, Seaford VIC 3198, Australia</gpxx:StreetAddress>
+                    <gpxx:City>Seaford</gpxx:City>
+                    <gpxx:State>VIC</gpxx:State>
+                    <gpxx:Country>AU</gpxx:Country>
+                    <gpxx:PostalCode>3198</gpxx:PostalCode>
+                </gpxx:Address>
+            </gpxx:WaypointExtension>
+        </extensions>
+    </wpt>
+    <wpt lat="-38.104119" lon="145.128163">
+        <time>2014-04-30T13:29:19Z</time>
+        <name>Seaford Station</name>
+        <desc>Seaford Train Station</desc>
+        <extensions>
+            <gpxx:WaypointExtension>
+                <gpxx:Proximity>1</gpxx:Proximity>
+                <gpxx:Address>
+                    <gpxx:StreetAddress>45 Railway Parade, Seaford VIC 3198, Australia</gpxx:StreetAddress>
+                    <gpxx:City>Seaford</gpxx:City>
+                    <gpxx:State>VIC</gpxx:State>
+                    <gpxx:Country>AU</gpxx:Country>
+                    <gpxx:PostalCode>3198</gpxx:PostalCode>
+                </gpxx:Address>
+            </gpxx:WaypointExtension>
+        </extensions>
+    </wpt>
+    <wpt lat="-38.104119" lon="145.128163">
+        <time>2014-04-30T13:29:19Z</time>
+        <name>Seaford Station</name>
+        <desc>Seaford Train Station</desc>
+        <extensions>
+            <gpxx:WaypointExtension>
+                <gpxx:Proximity>1</gpxx:Proximity>
+                <gpxx:Address>
+                    <gpxx:StreetAddress>45 Railway Parade, Seaford VIC 3198, Australia</gpxx:StreetAddress>
+                    <gpxx:City>Seaford</gpxx:City>
+                    <gpxx:State>VIC</gpxx:State>
+                    <gpxx:Country>AU</gpxx:Country>
+                    <gpxx:PostalCode>3198</gpxx:PostalCode>
+                </gpxx:Address>
+            </gpxx:WaypointExtension>
+        </extensions>
+    </wpt>
+    <wpt lat="-38.104119" lon="145.128163">
+        <time>2014-04-30T13:29:19Z</time>
+        <name>Seaford Station</name>
+        <desc>Seaford Train Station</desc>
+        <extensions>
+            <gpxx:WaypointExtension>
+                <gpxx:Proximity>1</gpxx:Proximity>
+                <gpxx:Address>
+                    <gpxx:StreetAddress>45 Railway Parade, Seaford VIC 3198, Australia</gpxx:StreetAddress>
+                    <gpxx:City>Seaford</gpxx:City>
+                    <gpxx:State>VIC</gpxx:State>
+                    <gpxx:Country>AU</gpxx:Country>
+                    <gpxx:PostalCode>3198</gpxx:PostalCode>
+                </gpxx:Address>
+            </gpxx:WaypointExtension>
+        </extensions>
+    </wpt>
+    <wpt lat="-38.104119" lon="145.128163">
+        <time>2014-04-30T13:29:19Z</time>
+        <name>Seaford Station</name>
+        <desc>Seaford Train Station</desc>
+        <extensions>
+            <gpxx:WaypointExtension>
+                <gpxx:Proximity>1</gpxx:Proximity>
+                <gpxx:Address>
+                    <gpxx:StreetAddress>45 Railway Parade, Seaford VIC 3198, Australia</gpxx:StreetAddress>
+                    <gpxx:City>Seaford</gpxx:City>
+                    <gpxx:State>VIC</gpxx:State>
+                    <gpxx:Country>AU</gpxx:Country>
+                    <gpxx:PostalCode>3198</gpxx:PostalCode>
+                </gpxx:Address>
+            </gpxx:WaypointExtension>
+        </extensions>
+    </wpt>
+    <wpt lat="-38.104119" lon="145.128163">
+        <time>2014-04-30T13:29:19Z</time>
+        <name>Seaford Station</name>
+        <desc>Seaford Train Station</desc>
+        <extensions>
+            <gpxx:WaypointExtension>
+                <gpxx:Proximity>1</gpxx:Proximity>
+                <gpxx:Address>
+                    <gpxx:StreetAddress>45 Railway Parade, Seaford VIC 3198, Australia</gpxx:StreetAddress>
+                    <gpxx:City>Seaford</gpxx:City>
+                    <gpxx:State>VIC</gpxx:State>
+                    <gpxx:Country>AU</gpxx:Country>
+                    <gpxx:PostalCode>3198</gpxx:PostalCode>
+                </gpxx:Address>
+            </gpxx:WaypointExtension>
+        </extensions>
+    </wpt>
+    <wpt lat="-38.120746" lon="145.135771">
+        <time>2014-04-30T13:29:19Z</time>
+        <name>Kananook Station</name>
+        <desc>Kananook Train Station</desc>
+        <extensions>
+            <gpxx:WaypointExtension>
+                <gpxx:Proximity>1</gpxx:Proximity>
+                <gpxx:Address>
+                    <gpxx:StreetAddress>Wells Road, Frankston VIC 3199, Australia</gpxx:StreetAddress>
+                    <gpxx:City>Frankston</gpxx:City>
+                    <gpxx:State>VIC</gpxx:State>
+                    <gpxx:Country>AU</gpxx:Country>
+                    <gpxx:PostalCode>3199</gpxx:PostalCode>
+                </gpxx:Address>
+            </gpxx:WaypointExtension>
+        </extensions>
+    </wpt>
+    <wpt lat="-38.120746" lon="145.135771">
+        <time>2014-04-30T13:29:19Z</time>
+        <name>Kananook Station</name>
+        <desc>Kananook Train Station</desc>
+        <extensions>
+            <gpxx:WaypointExtension>
+                <gpxx:Proximity>1</gpxx:Proximity>
+                <gpxx:Address>
+                    <gpxx:StreetAddress>Wells Road, Frankston VIC 3199, Australia</gpxx:StreetAddress>
+                    <gpxx:City>Frankston</gpxx:City>
+                    <gpxx:State>VIC</gpxx:State>
+                    <gpxx:Country>AU</gpxx:Country>
+                    <gpxx:PostalCode>3199</gpxx:PostalCode>
+                </gpxx:Address>
+            </gpxx:WaypointExtension>
+        </extensions>
+    </wpt>
+    <wpt lat="-38.120746" lon="145.135771">
+        <time>2014-04-30T13:29:19Z</time>
+        <name>Kananook Station</name>
+        <desc>Kananook Train Station</desc>
+        <extensions>
+            <gpxx:WaypointExtension>
+                <gpxx:Proximity>1</gpxx:Proximity>
+                <gpxx:Address>
+                    <gpxx:StreetAddress>Wells Road, Frankston VIC 3199, Australia</gpxx:StreetAddress>
+                    <gpxx:City>Frankston</gpxx:City>
+                    <gpxx:State>VIC</gpxx:State>
+                    <gpxx:Country>AU</gpxx:Country>
+                    <gpxx:PostalCode>3199</gpxx:PostalCode>
+                </gpxx:Address>
+            </gpxx:WaypointExtension>
+        </extensions>
+    </wpt>
+    <wpt lat="-38.120746" lon="145.135771">
+        <time>2014-04-30T13:29:19Z</time>
+        <name>Kananook Station</name>
+        <desc>Kananook Train Station</desc>
+        <extensions>
+            <gpxx:WaypointExtension>
+                <gpxx:Proximity>1</gpxx:Proximity>
+                <gpxx:Address>
+                    <gpxx:StreetAddress>Wells Road, Frankston VIC 3199, Australia</gpxx:StreetAddress>
+                    <gpxx:City>Frankston</gpxx:City>
+                    <gpxx:State>VIC</gpxx:State>
+                    <gpxx:Country>AU</gpxx:Country>
+                    <gpxx:PostalCode>3199</gpxx:PostalCode>
+                </gpxx:Address>
+            </gpxx:WaypointExtension>
+        </extensions>
+    </wpt>
+    <wpt lat="-38.120746" lon="145.135771">
+        <time>2014-04-30T13:29:19Z</time>
+        <name>Kananook Station</name>
+        <desc>Kananook Train Station</desc>
+        <extensions>
+            <gpxx:WaypointExtension>
+                <gpxx:Proximity>1</gpxx:Proximity>
+                <gpxx:Address>
+                    <gpxx:StreetAddress>Wells Road, Frankston VIC 3199, Australia</gpxx:StreetAddress>
+                    <gpxx:City>Frankston</gpxx:City>
+                    <gpxx:State>VIC</gpxx:State>
+                    <gpxx:Country>AU</gpxx:Country>
+                    <gpxx:PostalCode>3199</gpxx:PostalCode>
+                </gpxx:Address>
+            </gpxx:WaypointExtension>
+        </extensions>
+    </wpt>
+    <wpt lat="-38.120746" lon="145.135771">
+        <time>2014-04-30T13:29:19Z</time>
+        <name>Kananook Station</name>
+        <desc>Kananook Train Station</desc>
+        <extensions>
+            <gpxx:WaypointExtension>
+                <gpxx:Proximity>1</gpxx:Proximity>
+                <gpxx:Address>
+                    <gpxx:StreetAddress>Wells Road, Frankston VIC 3199, Australia</gpxx:StreetAddress>
+                    <gpxx:City>Frankston</gpxx:City>
+                    <gpxx:State>VIC</gpxx:State>
+                    <gpxx:Country>AU</gpxx:Country>
+                    <gpxx:PostalCode>3199</gpxx:PostalCode>
+                </gpxx:Address>
+            </gpxx:WaypointExtension>
+        </extensions>
+    </wpt>
+    <wpt lat="-38.143429" lon="145.125932">
+        <time>2014-04-30T13:29:34Z</time>
+        <name>Frankston Station</name>
+        <desc>Frankston Train Station</desc>
+        <extensions>
+            <gpxx:WaypointExtension>
+                <gpxx:Proximity>1</gpxx:Proximity>
+                <gpxx:Address>
+                    <gpxx:StreetAddress>Young Street, Frankston VIC 3199, Australia</gpxx:StreetAddress>
+                    <gpxx:City>Frankston</gpxx:City>
+                    <gpxx:State>VIC</gpxx:State>
+                    <gpxx:Country>AU</gpxx:Country>
+                    <gpxx:PostalCode>3199</gpxx:PostalCode>
+                </gpxx:Address>
+            </gpxx:WaypointExtension>
+        </extensions>
+    </wpt>
+    <wpt lat="-38.143429" lon="145.125932">
+        <time>2014-04-30T13:29:34Z</time>
+        <name>Frankston Station</name>
+        <desc>Frankston Train Station</desc>
+        <extensions>
+            <gpxx:WaypointExtension>
+                <gpxx:Proximity>1</gpxx:Proximity>
+                <gpxx:Address>
+                    <gpxx:StreetAddress>Young Street, Frankston VIC 3199, Australia</gpxx:StreetAddress>
+                    <gpxx:City>Frankston</gpxx:City>
+                    <gpxx:State>VIC</gpxx:State>
+                    <gpxx:Country>AU</gpxx:Country>
+                    <gpxx:PostalCode>3199</gpxx:PostalCode>
+                </gpxx:Address>
+            </gpxx:WaypointExtension>
+        </extensions>
+    </wpt>
+    <wpt lat="-38.143429" lon="145.125932">
+        <time>2014-04-30T13:29:34Z</time>
+        <name>Frankston Station</name>
+        <desc>Frankston Train Station</desc>
+        <extensions>
+            <gpxx:WaypointExtension>
+                <gpxx:Proximity>1</gpxx:Proximity>
+                <gpxx:Address>
+                    <gpxx:StreetAddress>Young Street, Frankston VIC 3199, Australia</gpxx:StreetAddress>
+                    <gpxx:City>Frankston</gpxx:City>
+                    <gpxx:State>VIC</gpxx:State>
+                    <gpxx:Country>AU</gpxx:Country>
+                    <gpxx:PostalCode>3199</gpxx:PostalCode>
+                </gpxx:Address>
+            </gpxx:WaypointExtension>
+        </extensions>
+    </wpt>
+    <wpt lat="-38.143429" lon="145.125932">
+        <time>2014-04-30T13:29:34Z</time>
+        <name>Frankston Station</name>
+        <desc>Frankston Train Station</desc>
+        <extensions>
+            <gpxx:WaypointExtension>
+                <gpxx:Proximity>1</gpxx:Proximity>
+                <gpxx:Address>
+                    <gpxx:StreetAddress>Young Street, Frankston VIC 3199, Australia</gpxx:StreetAddress>
+                    <gpxx:City>Frankston</gpxx:City>
+                    <gpxx:State>VIC</gpxx:State>
+                    <gpxx:Country>AU</gpxx:Country>
+                    <gpxx:PostalCode>3199</gpxx:PostalCode>
+                </gpxx:Address>
+            </gpxx:WaypointExtension>
+        </extensions>
+    </wpt>
+    <wpt lat="-38.143429" lon="145.125932">
+        <time>2014-04-30T13:29:34Z</time>
+        <name>Frankston Station</name>
+        <desc>Frankston Train Station</desc>
+        <extensions>
+            <gpxx:WaypointExtension>
+                <gpxx:Proximity>1</gpxx:Proximity>
+                <gpxx:Address>
+                    <gpxx:StreetAddress>Young Street, Frankston VIC 3199, Australia</gpxx:StreetAddress>
+                    <gpxx:City>Frankston</gpxx:City>
+                    <gpxx:State>VIC</gpxx:State>
+                    <gpxx:Country>AU</gpxx:Country>
+                    <gpxx:PostalCode>3199</gpxx:PostalCode>
+                </gpxx:Address>
+            </gpxx:WaypointExtension>
+        </extensions>
+    </wpt>
+    <wpt lat="-38.143429" lon="145.125932">
+        <time>2014-04-30T13:29:34Z</time>
+        <name>Frankston Station</name>
+        <desc>Frankston Train Station</desc>
+        <extensions>
+            <gpxx:WaypointExtension>
+                <gpxx:Proximity>1</gpxx:Proximity>
+                <gpxx:Address>
+                    <gpxx:StreetAddress>Young Street, Frankston VIC 3199, Australia</gpxx:StreetAddress>
+                    <gpxx:City>Frankston</gpxx:City>
+                    <gpxx:State>VIC</gpxx:State>
+                    <gpxx:Country>AU</gpxx:Country>
+                    <gpxx:PostalCode>3199</gpxx:PostalCode>
+                </gpxx:Address>
+            </gpxx:WaypointExtension>
+        </extensions>
+    </wpt>
+    <wpt lat="-38.143429" lon="145.125932">
+        <time>2014-04-30T13:29:34Z</time>
+        <name>Frankston Station</name>
+        <desc>Frankston Train Station</desc>
+        <extensions>
+            <gpxx:WaypointExtension>
+                <gpxx:Proximity>1</gpxx:Proximity>
+                <gpxx:Address>
+                    <gpxx:StreetAddress>Young Street, Frankston VIC 3199, Australia</gpxx:StreetAddress>
+                    <gpxx:City>Frankston</gpxx:City>
+                    <gpxx:State>VIC</gpxx:State>
+                    <gpxx:Country>AU</gpxx:Country>
+                    <gpxx:PostalCode>3199</gpxx:PostalCode>
+                </gpxx:Address>
+            </gpxx:WaypointExtension>
+        </extensions>
+    </wpt>
+    <wpt lat="-38.143429" lon="145.125932">
+        <time>2014-04-30T13:29:34Z</time>
+        <name>Frankston Station</name>
+        <desc>Frankston Train Station</desc>
+        <extensions>
+            <gpxx:WaypointExtension>
+                <gpxx:Proximity>1</gpxx:Proximity>
+                <gpxx:Address>
+                    <gpxx:StreetAddress>Young Street, Frankston VIC 3199, Australia</gpxx:StreetAddress>
+                    <gpxx:City>Frankston</gpxx:City>
+                    <gpxx:State>VIC</gpxx:State>
+                    <gpxx:Country>AU</gpxx:Country>
+                    <gpxx:PostalCode>3199</gpxx:PostalCode>
+                </gpxx:Address>
+            </gpxx:WaypointExtension>
+        </extensions>
+    </wpt>
+</gpx>
