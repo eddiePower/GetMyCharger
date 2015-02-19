@@ -43,7 +43,7 @@
     [self.homeLocationsTblView reloadData];
 }
 
-
+/*
 -(NSArray  *)lookupStreetAddress
 {
     //create the reverseGeocoder to get the address of the gps data for home location.
@@ -83,6 +83,7 @@
     
     return self.streetAddressArray;
 }
+*/
 
 - (IBAction)buttonPressed:(UIButton *)sender
 {
