@@ -180,7 +180,7 @@
     //only let the audioPlayer run 1 time.
     self.audioPlayer.numberOfLoops = 1;
     //play the sound effect now.
-    [self.audioPlayer play];
+    // [self.audioPlayer play];
     
 }
 
@@ -200,6 +200,7 @@
         
         //Show the alert box
         [chargerAlert show];
+        
     }
     else if (self.myDevice.batteryState == 2)
     {

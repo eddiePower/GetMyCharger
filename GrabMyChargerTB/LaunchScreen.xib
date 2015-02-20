@@ -23,7 +23,7 @@
                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                     <nil key="highlightedColor"/>
                 </label>
-                <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="title" translatesAutoresizingMaskIntoConstraints="NO" id="zL2-MQ-EFM">
+                <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" misplaced="YES" image="title" translatesAutoresizingMaskIntoConstraints="NO" id="zL2-MQ-EFM">
                     <rect key="frame" x="72" y="99" width="336" height="306"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="306" id="5MY-zA-PUQ"/>
