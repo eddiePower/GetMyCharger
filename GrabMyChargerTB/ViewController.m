@@ -145,8 +145,9 @@
                                             //copy and finish using our Mutable tempArray to our Array for adding to our view
                                             self.streetAddressArray = [tempArray copy];
                                             //Add the current location street address as a string to our Array
-                                            [self.homeLocationsArray addObjectsFromArray: self.streetAddressArray];
                                             
+                                            [self.homeLocationsArray addObjectsFromArray: self.streetAddressArray];
+
                                             //add the new result to the table view when it is finished downloading
                                             //!!!! Monitor time for random locations in the field!!!!
                                             [self.homeLocationsTblView reloadData];
